@@ -1,0 +1,702 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home of noebs</title>
+    <link>/</link>
+    <description>Recent content on Home of noebs</description>
+    <generator>Hugo - gohugo.io</generator>
+    <language>en</language>
+    <contact>ribice@gmail.com</contact>
+    <copyright></copyright>
+    
+        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pin block calculations for EBS</title>
+      <link>/post/pin_block/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      <author>Emir Ribic</author>
+      <guid>/post/pin_block/</guid>
+      <description></description>
+      
+      <content>
+
+&lt;p&gt;In financial transactions, pin block calculations is one of the most important tasks and it&amp;rsquo;s often a source for mistakes. In this article, we will be discussing pin block calculations in EBS system (it uses DES) while using our implementation, TA.
+&lt;a href=&#34;https://beta.soluspay.net/pin&#34; target=&#34;_blank&#34;&gt;TA&lt;/a&gt; is written in Python and it is used internally by our team for all of our testing and pin calculations. The source code is also available in &lt;a href=&#34;https://github.com/adonese/ta&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;little-about-technology-stach&#34;&gt;Little about technology stach&lt;/h2&gt;
+
+&lt;p&gt;We used a very interesting new-in-the town Python framework built on the new async, &lt;a href=&#34;https://github.com/encode/starlette&#34; target=&#34;_blank&#34;&gt;Starlette&lt;/a&gt;. Starlette and its server &lt;a href=&#34;https://github.com/encode/uvicorn&#34; target=&#34;_blank&#34;&gt;uvicron&lt;/a&gt; are very interesting addition to Python world as they allow for high throughput, something was not easily achievable in Python before. The standardization of async framework is for the best interest of the language; people can focus their effort on one place. We are very excited about uvicorn and starlette and we couldn&amp;rsquo;t have recommended them enough!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;we use Jinja2 as template engine&lt;/li&gt;
+&lt;li&gt;gunicorn is used as application server (with uvicorn worker class)&lt;/li&gt;
+&lt;li&gt;we use systemd for running the service (restart, etc)&lt;/li&gt;
+&lt;li&gt;the whole application is running behind nginx server&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We feel people might find it interesting or useful to know more about our infrastructure and what technologies we are using. We tried different technologies than the mentioned there; we tried to use &lt;code&gt;supervisor&lt;/code&gt; instead of &lt;code&gt;systemd&lt;/code&gt;, but &lt;code&gt;systemd&lt;/code&gt; Just Works &amp;trade;. We have not experiement with any other python web server than gunicorn; I worked with uWSGI before and it was just hard to get it works (maybe because i used apache?). Gunicorn is as performant as uWSGI and more simplified. For all practical reasons, gunicorn is just better.
+We use nginx as a reverse proxy and load balancer so that&amp;rsquo;s that. Also, now the whole world is running nginx 🤷‍.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions, please reach out and let us know! We also glad to hear from you!&lt;/p&gt;
+</content>
+      
+    </item>
+    
+    <item>
+      <title>FAQ: your first support for any EBS issue</title>
+      <link>/faq/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      <author>Emir Ribic</author>
+      <guid>/faq/</guid>
+      <description></description>
+      
+      <content>
+
+&lt;h1 id=&#34;list-of-common-ebs-errors-and-their-meaninings&#34;&gt;List of common EBS errors and their meaninings&lt;/h1&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;error code&lt;/th&gt;
+&lt;th&gt;error meaning&lt;/th&gt;
+&lt;th&gt;how to solve&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;196&lt;/td&gt;
+&lt;td&gt;System error&lt;/td&gt;
+&lt;td&gt;regarding the pin block &lt;a href=&#34;/post/pin_block&#34;&gt;see our post on pin block calculations&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;000&lt;/td&gt;
+&lt;td&gt;Approval&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;103&lt;/td&gt;
+&lt;td&gt;Format Error&lt;/td&gt;
+&lt;td&gt;Invalid merchant or service provider&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;130&lt;/td&gt;
+&lt;td&gt;Invalid format&lt;/td&gt;
+&lt;td&gt;The transaction has invalid format. After the transaction authorization, the terminal or external host will declined the response&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;178&lt;/td&gt;
+&lt;td&gt;Original request not found&lt;/td&gt;
+&lt;td&gt;Returned if the voucher is not found for the particular phone number sent on the request of cash out voucher, the phone number entered isn’t the same as the one used to generate the voucher&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;158&lt;/td&gt;
+&lt;td&gt;Invalid processing code&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;161&lt;/td&gt;
+&lt;td&gt;Withdrawal limit exceeded&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;191&lt;/td&gt;
+&lt;td&gt;Destination not available&lt;/td&gt;
+&lt;td&gt;The transaction destination (e.g. bank or biller) is unreachable, or didn&amp;rsquo;t respond during timeout period. In case of timeout with a biller, there is a chance that biller provided actual service to customer, so debited amount won’t be reversed.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;194&lt;/td&gt;
+&lt;td&gt;Duplicate transaction&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;196&lt;/td&gt;
+&lt;td&gt;System error&lt;/td&gt;
+&lt;td&gt;Unexpected error occurred in the system&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;201&lt;/td&gt;
+&lt;td&gt;Contact Card Issuer&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;205&lt;/td&gt;
+&lt;td&gt;External decline&lt;/td&gt;
+&lt;td&gt;The external system, e.g. biller, has declined the transaction, usually because provided customer data are not accepted. E.g. wrong phone number for top-up transactions.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;251&lt;/td&gt;
+&lt;td&gt;Insufficient fund&lt;/td&gt;
+&lt;td&gt;Customer doesn&amp;rsquo;t have enough balance&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;281&lt;/td&gt;
+&lt;td&gt;Wrong customer information&lt;/td&gt;
+&lt;td&gt;Mostly used to indicate wrong customer payment info that is not accepted by the biller, or a missing parameter of the “PersonalPaymentInfo” field.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;338&lt;/td&gt;
+&lt;td&gt;PIN tries limit exceeded&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;355&lt;/td&gt;
+&lt;td&gt;Invalid PIN&lt;/td&gt;
+&lt;td&gt;PIN entered was wrong&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;375&lt;/td&gt;
+&lt;td&gt;PIN Tries Limit Reached&lt;/td&gt;
+&lt;td&gt;Customer reached the max allowed number of wrong PIN entries&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;362&lt;/td&gt;
+&lt;td&gt;Encryption error&lt;/td&gt;
+&lt;td&gt;For future use&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;389&lt;/td&gt;
+&lt;td&gt;Invalid terminal ID&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;412&lt;/td&gt;
+&lt;td&gt;Invalid transaction&lt;/td&gt;
+&lt;td&gt;The transaction is not allowed for the profile of this customer&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;413&lt;/td&gt;
+&lt;td&gt;Merchant limit exceeded&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;467&lt;/td&gt;
+&lt;td&gt;Invalid amount&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;514&lt;/td&gt;
+&lt;td&gt;Invalid track 2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;536&lt;/td&gt;
+&lt;td&gt;Restricted card&lt;/td&gt;
+&lt;td&gt;Card status is &amp;ldquo;Restricted&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;541&lt;/td&gt;
+&lt;td&gt;Lost card&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;543&lt;/td&gt;
+&lt;td&gt;Stolen card&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;550&lt;/td&gt;
+&lt;td&gt;Closed card&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;552&lt;/td&gt;
+&lt;td&gt;Declared card&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;554&lt;/td&gt;
+&lt;td&gt;Expired card&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;600&lt;/td&gt;
+&lt;td&gt;Invalid client Id&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;601&lt;/td&gt;
+&lt;td&gt;Invalid Card Number Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;602&lt;/td&gt;
+&lt;td&gt;Invalid Expiry Date Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;603&lt;/td&gt;
+&lt;td&gt;Format Error&lt;/td&gt;
+&lt;td&gt;There is a missing parameter of the transaction request, or invalid request in general.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;604&lt;/td&gt;
+&lt;td&gt;Invalid Currency Code&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;605&lt;/td&gt;
+&lt;td&gt;Invalid Account Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;606&lt;/td&gt;
+&lt;td&gt;Invalid System Trace Audit Number Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;607&lt;/td&gt;
+&lt;td&gt;Invalid Personal Payment Information Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;608&lt;/td&gt;
+&lt;td&gt;Invalid Payee Identification&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;609&lt;/td&gt;
+&lt;td&gt;Invalid Phone Number Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;610&lt;/td&gt;
+&lt;td&gt;Invalid voucher number Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;611&lt;/td&gt;
+&lt;td&gt;Invalid Transaction Date Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;615&lt;/td&gt;
+&lt;td&gt;Invalid Service Id&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;616&lt;/td&gt;
+&lt;td&gt;Invalid original transaction system trace audit number Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;617&lt;/td&gt;
+&lt;td&gt;MCS Time out&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;618&lt;/td&gt;
+&lt;td&gt;This service cannot be reversed Related to reversal service&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;619&lt;/td&gt;
+&lt;td&gt;Invalid Terminal Id Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;620&lt;/td&gt;
+&lt;td&gt;Invalid PIN Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;621&lt;/td&gt;
+&lt;td&gt;Invalid Amount Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;622&lt;/td&gt;
+&lt;td&gt;Invalid Cash Back Amount Format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;632&lt;/td&gt;
+&lt;td&gt;MCS Invalid Cash out Transaction due to Invalid voucher length&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;633&lt;/td&gt;
+&lt;td&gt;MCS invalid track2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;923&lt;/td&gt;
+&lt;td&gt;Could not send the OTP&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;934&lt;/td&gt;
+&lt;td&gt;OTP expired&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;935&lt;/td&gt;
+&lt;td&gt;OTP tries limit exceeded&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;936&lt;/td&gt;
+&lt;td&gt;Invalid  OTP&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;636&lt;/td&gt;
+&lt;td&gt;Invalid entityId&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;637&lt;/td&gt;
+&lt;td&gt;Invalid entityType&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;638&lt;/td&gt;
+&lt;td&gt;Invalid channelType&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;639&lt;/td&gt;
+&lt;td&gt;OTP ChannelId (phoneNO) Not Found for this Entity&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;903&lt;/td&gt;
+&lt;td&gt;No Data (OTP) found to be validated&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;905&lt;/td&gt;
+&lt;td&gt;OTP Operation Failed&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;634&lt;/td&gt;
+&lt;td&gt;Invalid OTP field&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;635&lt;/td&gt;
+&lt;td&gt;Invalid generated OTP id&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;696&lt;/td&gt;
+&lt;td&gt;MCS System Error&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+      
+    </item>
+    
+    <item>
+      <title>noebs: the most secure middleware</title>
+      <link>/post/noebs/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      <author>Emir Ribic</author>
+      <guid>/post/noebs/</guid>
+      <description></description>
+      
+      <content>
+
+&lt;blockquote&gt;
+&lt;p&gt;API-first, high performant middleware. noebs is the most secure and modern middleware.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;what-is-noebs&#34;&gt;What is noebs&lt;/h1&gt;
+
+&lt;p&gt;It is definitely not a replacement for EBS, if anything we embrace the use of EBS and its role as a unified switching system. But, we aim to provide a thin wrapper around EBS functionalities that can be exposed to both POS and mobile applications. A starting point where you can write your business logic. It is free and open source built using Go. noebs encapsulates many of the things I learned while working with a full fledged payment gateway. It is very fast and robust and doesn’t get on your way while using it. The design of noebs makes it very simple for the developers to work with and extend it. It is not opinionated, we assume that the developers know better what their business needs and tailor noebs to their requirements. You can add as much of other middlewares as you wish; be it a logger, sms gateway or any other service. We highly encourage you to adapt this microservice architecture, where the whole application is layered on top of each other’s.&lt;/p&gt;
+
+&lt;h2 id=&#34;this-project-goals&#34;&gt;This project goals&lt;/h2&gt;
+
+&lt;p&gt;Provide a highly scalable payment gateway that can handles tens of thousands of concurrent requests. Currently, we are only interfacing with EBS, but we plan to cover other private switches as well. It is also open source meaning you can use for free! We don’t have any hidden subscription fees or anything. Totally free and open source.&lt;/p&gt;
+
+&lt;h2 id=&#34;commercial-plans&#34;&gt;Commercial plans&lt;/h2&gt;
+
+&lt;p&gt;We do have commercial plans. In fact, we can help you in every part of your electronic payment system. You can use our hosted middleware service without the need of hosting it yourself.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;EBS simulator (you can use it in during your development phase)&lt;/li&gt;
+&lt;li&gt;We also have QA developers that can help you during your tests. They’re as lame and bureaucratic as EBS ones are&lt;/li&gt;
+&lt;li&gt;we can help you write your clients applications, whether they’re mobile, or POS&lt;/li&gt;
+&lt;li&gt;we can assist and help you plan for your business model&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more details, contact us at mmbusif@gmail.com.&lt;/p&gt;
+
+&lt;h1 id=&#34;consultancy&#34;&gt;Consultancy&lt;/h1&gt;
+
+&lt;p&gt;While everything you see here is very and open source; we don&amp;rsquo;t hide any fees or charges, we expect that some might be interested in a commercial plans. We offer our consultancy services via Gndi. We have a team with variety of proficiency, from backend engineers, mobile developers to UX/UI and QA testing engineers. Some of our team members have worked at EBS, while most of the team have a huge experience in e-payment systems.&lt;/p&gt;
+
+&lt;p&gt;Contact us: +249 925343834 (Mohamed Yousif) | +249 9023 00672 (Mohamed Gafar) | adonese@acts-sd.com (Mohamed Yousif)&lt;/p&gt;
+
+&lt;h1 id=&#34;our-simulator-and-ebs-services&#34;&gt;Our simulator and EBS services&lt;/h1&gt;
+
+&lt;p&gt;Our team have developed an internal EBS QA test system that emulates EBS test environment. We offer our simulator as a paid service
+- very superior to that of EBS testing server. It runs on weekends. Well, &lt;sup&gt;24&lt;/sup&gt;&amp;frasl;&lt;sub&gt;7&lt;/sub&gt;, just like any server should work ¯\_(ツ)_/¯.
+- hate EBS&amp;rsquo;s bureaucracy? We do too. No need for the EBS busy servers, you can test our server at any time.
+- we have two plans for the simulator:
+    - you can use our EBS simulator on your own; we won&amp;rsquo;t test your services.
+    - we can use our EBS simulator while we do the plan for you, the exact way EBS does. Bear in mind that our testers are highly competitive and they&amp;rsquo;re all ex-EBSers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;We plan on releasing our simulator very soon. Stay tuned.&lt;/strong&gt;&lt;/p&gt;
+</content>
+      
+    </item>
+    
+    <item>
+      <title>noebs technology stack</title>
+      <link>/noebs_pro/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      <author>Emir Ribic</author>
+      <guid>/noebs_pro/</guid>
+      <description></description>
+      
+      <content></content>
+      
+    </item>
+    
+    <item>
+      <title>noebs technology stack</title>
+      <link>/infra/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      <author>Emir Ribic</author>
+      <guid>/infra/</guid>
+      <description></description>
+      
+      <content>
+
+&lt;p&gt;noebs supports interesting technologies that makes it the best in class solution. We support HTTP/2, server push (for live dashboard updates). It comes with Redis support and optional classical DB (you can use sqlite, mysql, and postgres). Resiliency and database distributions are first class citizen. When using proper setup, you can scale upto how your load balancer can handle. We use nginx as a reverse proxy and load balancer, and using this awesome setup we were able to scale to multiple servers without changing a single line of code in noebs.&lt;/p&gt;
+
+&lt;h1 id=&#34;technology-stack&#34;&gt;Technology stack&lt;/h1&gt;
+
+&lt;p&gt;noebs is written in Go, with gin as a router. We experienced a lot of productivity boost while using Go and that encouraged us to adopt Go for our other backend projects.&lt;/p&gt;
+
+&lt;p&gt;We use nginx as a reverse proxy to application server. nginx gives a nice separation of concerns; the application doesn&amp;rsquo;t need to care about things like access log and security. This also helps our team to be more productive as now each task can be handled by different team members.&lt;/p&gt;
+
+&lt;p&gt;In short, noebs uses these technologies:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;is written in Go using gin framework&lt;/li&gt;
+&lt;li&gt;we use Gorm for its ORM features (but lots of queries are written in SQL)&lt;/li&gt;
+&lt;li&gt;we use sqlite3 as a persistent storage layer (database)&lt;/li&gt;
+&lt;li&gt;we also use redis and we are willing to replace all of Gorm/sqlite with it&lt;/li&gt;
+&lt;li&gt;nginx is used as a reverse proxy and it handles securtiy, TLS certificates as well as authentication&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;api-first&#34;&gt;API first&lt;/h2&gt;
+
+&lt;p&gt;noebs is an API-first middleware. Every response is of type &lt;code&gt;application/json&lt;/code&gt;, and this is really important. Using a universal-easy to parse responses will allow noebs consumers to easily interact and handle our responses. Parsing json is a lot easier (and widely supported) than text/html. And this is for all of our responses, including &lt;code&gt;404, 401, 400&lt;/code&gt; as well.&lt;/p&gt;
+
+&lt;p&gt;This is quite what noebs is all about. Simplicity built-in.&lt;/p&gt;
+
+&lt;p&gt;Next blog post will be about our deployment practices. Stay tuned for more open source noebs!&lt;/p&gt;
+</content>
+      
+    </item>
+    
+    <item>
+      <title>Guides on how to deploy your noebs applications</title>
+      <link>/guides/use-noebs/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      <author>Emir Ribic</author>
+      <guid>/guides/use-noebs/</guid>
+      <description></description>
+      
+      <content>
+
+&lt;h2 id=&#34;why-go&#34;&gt;Why Go?&lt;/h2&gt;
+
+&lt;p&gt;Go is really fast! Our application can happily serve more than 60k req/sec. The bottleneck will never be on your payment gateway service! Plus, Go helps with many of the problems I faced while working with Python, the static typing can prevent your errors from occurring only at runtime, and your code will compile into a single binary that you just run. I’ve been very excited to write web services Go and this project offers me just that!&lt;/p&gt;
+
+&lt;h1 id=&#34;how-to-use-noebs&#34;&gt;How to use noebs&lt;/h1&gt;
+
+&lt;p&gt;There are different ways to use noebs:&lt;/p&gt;
+
+&lt;h2 id=&#34;building-using-docker-and-docker-compose&#34;&gt;Building using Docker and docker-compose&lt;/h2&gt;
+
+&lt;p&gt;We provide an easier way to build and run noebs using Docker.
+- Fork this repository (e.g., &lt;code&gt;git clone https://github.com/adonese/noebs&lt;/code&gt;)
+- &lt;code&gt;cd&lt;/code&gt; to noebs root directory (E.g., $HOME/src/noebs)
+- &lt;code&gt;docker build -t noebs .&lt;/code&gt;  # -t for giving it a name
+- &lt;code&gt;docker run -it -p 8000:8000 noebs:latest&lt;/code&gt;
+- Open &lt;code&gt;localhost:8000/test&lt;/code&gt; in your broswer to interact with noebs&lt;/p&gt;
+
+&lt;h2 id=&#34;building-with-go-get-command-not-recommended&#34;&gt;Building with go get command [not recommended]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;make sure you have Go installed &lt;a href=&#34;https://golang.org&#34; target=&#34;_blank&#34;&gt;Consult go website to see various ways to install go&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Then&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# this command may likely takes along time depending on your internet connections.
+# also, make sure you are using a vpn since some of the libraries are hosted in GCE hosting which forbids Sudan
+go get github.com/adonese/noebs
+cd $GOPATH/github.com/adonese/noebs
+go build .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You will have a binary that after running it will spawn a production ready server!&lt;/p&gt;
+
+&lt;h2 id=&#34;notes-on-installation&#34;&gt;Notes on installation&lt;/h2&gt;
+
+&lt;p&gt;noebs needs to be connected with EBS merchant server in order to get useful responses. &lt;em&gt;However, you can run our embedded server that mocks EBS responses in cases where you cannot reach EBS server&lt;/em&gt;. To do that, you need to enable the development mode using a special env var, &lt;code&gt;EBS_LOCAL_DEV&lt;/code&gt;. You need to set &lt;code&gt;EBS_LOCAL_DEV=1&lt;/code&gt; in order to use the mocking functionality.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Using Docker
+&lt;code&gt;shell
+docker run -it -p 8000:8000 -e EBS_LOCAL_DEV=1 noebs:latest
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Using &lt;code&gt;go get&lt;/code&gt; method&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;export EBS_LOCAL_DEV=1 noebs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;this-project-philosophy&#34;&gt;This project philosophy&lt;/h1&gt;
+
+&lt;p&gt;noebs is not meant to be a full e-payment framework (e.g., unlike Morsal). It is meant as a generic e-payment gateway system. Currently, it implements EBS services, but we might add new gateway. Being such, adapts to Unix philosophy; doing one thing and do it good. Also, with our experience with embedded devices, working with authorizations and handling all of these headers and tokens (esp. JWT ones) has proven to be challenging as simply some of the older models cannot handle lengthy headers.
+You can however have this system architecture, suppose that you&amp;rsquo;re building a mobile payment application system:
+- a mobile application app (with its backend system, obviously). This app will encapsulates the business logic and authenticate the incoming requests.
+- a chatting service. Like WeChat, where people can send their money to their friends and families, in a very friendly way.
+- ecommerce platform. The idea is &lt;em&gt;not&lt;/em&gt; just to offer an epayment gateway, well, EBS offers that through their MCS web services.
+- and finally the payment gateway layer which handles the payment part.
+- there could be other services e.g., push notifications, SMS, 2FA and plenty of others.
+- logging and the reporting system.
+- rate limiting, geographical blocking and other API gateway protections.
+All of these will be implemented in a microservice archiectural design pattern, and it is your decision to choose what services you want. A mobile payment provider can use our payment service inside their application whenever their users are requesting any transactions. &lt;em&gt;It is not our responsibility to authenticate your users&lt;/em&gt;. This way, we can use this application in virtually any place. Our client consumers are held responsible for providing any kind of authentication for their requests.&lt;/p&gt;
+
+&lt;h2 id=&#34;services-we-offer&#34;&gt;Services we offer&lt;/h2&gt;
+
+&lt;p&gt;noebs implements &lt;em&gt;ALL&lt;/em&gt; of EBS merchant services. We are working to extend our support into other EBS services, e.g., consumer services, TITP, etc. However, those other services are not stable and some of them (consumer) are deem to deprecation.&lt;/p&gt;
+
+&lt;p&gt;If YOU are interested in other services, please reach out and we will be more than happy to discuss them with you.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+      
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      <author>Emir Ribic</author>
+      <guid>/about/</guid>
+      <description></description>
+      
+      <content>
+
+&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
+
+&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34; target=&#34;_blank&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34; target=&#34;_blank&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34; target=&#34;_blank&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34; target=&#34;_blank&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/spf13&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;Some fun facts about &lt;a href=&#34;http://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Built in &lt;a href=&#34;http://golang.org/&#34; target=&#34;_blank&#34;&gt;Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Loosely inspired by &lt;a href=&#34;http://jekyllrb.com/&#34; target=&#34;_blank&#34;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Primarily developed by &lt;a href=&#34;http://spf13.com/&#34; target=&#34;_blank&#34;&gt;spf13&lt;/a&gt; on the train while commuting to and from Manhattan.&lt;/li&gt;
+&lt;li&gt;Coded in &lt;a href=&#34;http://vim.org&#34; target=&#34;_blank&#34;&gt;Vim&lt;/a&gt; using &lt;a href=&#34;http://vim.spf13.com/&#34; target=&#34;_blank&#34;&gt;spf13-vim&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Have questions or suggestions? Feel free to &lt;a href=&#34;https://github.com/spf13/hugo/issues/new&#34; target=&#34;_blank&#34;&gt;open an issue on GitHub&lt;/a&gt; or &lt;a href=&#34;https://twitter.com/spf13&#34; target=&#34;_blank&#34;&gt;ask me on Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;
+</content>
+      
+    </item>
+    
+    <item>
+      <title>contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>Emir Ribic</author>
+      <guid>/contact/</guid>
+      <description></description>
+      
+      <content>
+
+&lt;h1 id=&#34;this-is-really-not-anything&#34;&gt;this is really not anything&lt;/h1&gt;
+</content>
+      
+    </item>
+    
+  </channel>
+</rss>

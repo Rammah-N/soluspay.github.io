@@ -1,12 +1,12 @@
-baseurl = "https://no-ebs.github.io"
+#baseurl = "beta.soluspay.net"
 languageCode = "en-US"
 title = "Home of noebs"
 disqusShortname = "shortname"
 googleAnalytics = ""
 Paginate = 5 # Number of posts per page
 enableRobotsTXT = true
-publishDir = "no-ebs.github.io"
-
+# publishDir = "no-ebs.github.io"
+# 
 [params.rss] # Adding this tag enables RSS feed
 includeContent = true # Includes whole content in rss
 authorName = "Emir Ribic" # Author full name
