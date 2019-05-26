@@ -1,11 +1,11 @@
-#baseurl = "beta.soluspay.net"
+baseurl = "/"
 languageCode = "en-US"
 title = "Home of noebs"
 disqusShortname = "shortname"
 googleAnalytics = ""
 Paginate = 5 # Number of posts per page
 enableRobotsTXT = true
-# publishDir = "no-ebs.github.io"
+publishDir = "public"
 # 
 [params.rss] # Adding this tag enables RSS feed
 includeContent = true # Includes whole content in rss
