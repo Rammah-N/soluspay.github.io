@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home of noebs</title>
+    <title>Soluspay | Secure Payments</title>
     <link>/</link>
-    <description>Recent content on Home of noebs</description>
+    <description>Recent content on Soluspay | Secure Payments</description>
     <generator>Hugo - gohugo.io</generator>
     <language>en</language>
-    <contact>ribice@gmail.com</contact>
+    <contact>hi@soluspay.net</contact>
     <copyright></copyright>
     
         <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
@@ -14,8 +14,8 @@
     <item>
       <title>Pin block calculations for EBS</title>
       <link>/post/pin_block/</link>
-      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
-      <author>Emir Ribic</author>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0200</pubDate>
+      <author>Solus Team</author>
       <guid>/post/pin_block/</guid>
       <description></description>
       
@@ -46,8 +46,8 @@ We use nginx as a reverse proxy and load balancer so that&amp;rsquo;s that. Also
     <item>
       <title>FAQ: your first support for any EBS issue</title>
       <link>/faq/</link>
-      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      <author>Emir Ribic</author>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0200</pubDate>
+      <author>Solus Team</author>
       <guid>/faq/</guid>
       <description></description>
       
@@ -457,8 +457,8 @@ We use nginx as a reverse proxy and load balancer so that&amp;rsquo;s that. Also
     <item>
       <title>noebs: the most secure middleware</title>
       <link>/post/noebs/</link>
-      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      <author>Emir Ribic</author>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0200</pubDate>
+      <author>Solus Team</author>
       <guid>/post/noebs/</guid>
       <description></description>
       
@@ -512,8 +512,8 @@ We use nginx as a reverse proxy and load balancer so that&amp;rsquo;s that. Also
     <item>
       <title>noebs technology stack</title>
       <link>/noebs_pro/</link>
-      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
-      <author>Emir Ribic</author>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0200</pubDate>
+      <author>Solus Team</author>
       <guid>/noebs_pro/</guid>
       <description></description>
       
@@ -524,8 +524,8 @@ We use nginx as a reverse proxy and load balancer so that&amp;rsquo;s that. Also
     <item>
       <title>noebs technology stack</title>
       <link>/infra/</link>
-      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
-      <author>Emir Ribic</author>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0200</pubDate>
+      <author>Solus Team</author>
       <guid>/infra/</guid>
       <description></description>
       
@@ -563,8 +563,8 @@ We use nginx as a reverse proxy and load balancer so that&amp;rsquo;s that. Also
     <item>
       <title>Guides on how to deploy your noebs applications</title>
       <link>/guides/use-noebs/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      <author>Emir Ribic</author>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0200</pubDate>
+      <author>Solus Team</author>
       <guid>/guides/use-noebs/</guid>
       <description></description>
       
@@ -601,23 +601,24 @@ cd $GOPATH/github.com/adonese/noebs
 go build .
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You will have a binary that after running it will spawn a production ready server!&lt;/p&gt;
+&lt;p&gt;You will have a binary that after running it will spawn a production ready server!&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;notes-on-installation&#34;&gt;Notes on installation&lt;/h2&gt;
 
 &lt;p&gt;noebs needs to be connected with EBS merchant server in order to get useful responses. &lt;em&gt;However, you can run our embedded server that mocks EBS responses in cases where you cannot reach EBS server&lt;/em&gt;. To do that, you need to enable the development mode using a special env var, &lt;code&gt;EBS_LOCAL_DEV&lt;/code&gt;. You need to set &lt;code&gt;EBS_LOCAL_DEV=1&lt;/code&gt; in order to use the mocking functionality.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Using Docker
-&lt;code&gt;shell
-docker run -it -p 8000:8000 -e EBS_LOCAL_DEV=1 noebs:latest
-&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Using Docker&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;docker run -it -p 8000:8000 -e EBS_LOCAL_DEV=1 noebs:latest
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Using &lt;code&gt;go get&lt;/code&gt; method&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;export EBS_LOCAL_DEV=1 noebs
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&#34;this-project-philosophy&#34;&gt;This project philosophy&lt;/h1&gt;
 
@@ -636,8 +637,7 @@ All of these will be implemented in a microservice archiectural design pattern, 
 
 &lt;p&gt;noebs implements &lt;em&gt;ALL&lt;/em&gt; of EBS merchant services. We are working to extend our support into other EBS services, e.g., consumer services, TITP, etc. However, those other services are not stable and some of them (consumer) are deem to deprecation.&lt;/p&gt;
 
-&lt;p&gt;If YOU are interested in other services, please reach out and we will be more than happy to discuss them with you.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;If YOU are interested in other services, please reach out and we will be more than happy to discuss them with you.&lt;/p&gt;
 </content>
       
     </item>
@@ -646,7 +646,7 @@ All of these will be implemented in a microservice archiectural design pattern, 
       <title>about</title>
       <link>/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      <author>Emir Ribic</author>
+      <author>Solus Team</author>
       <guid>/about/</guid>
       <description></description>
       
@@ -687,13 +687,229 @@ All of these will be implemented in a microservice archiectural design pattern, 
       <title>contact</title>
       <link>/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>Emir Ribic</author>
+      <author>Solus Team</author>
       <guid>/contact/</guid>
       <description></description>
       
       <content>
 
-&lt;h1 id=&#34;this-is-really-not-anything&#34;&gt;this is really not anything&lt;/h1&gt;
+&lt;h1 id=&#34;contact-us&#34;&gt;Contact us&lt;/h1&gt;
+
+&lt;p&gt;If you are interested in any of our products, please reach out!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;email: &lt;a href=&#34;mailto:adonese@soluspay.net&#34;&gt;adonese@soluspay.net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;mobile: &lt;a href=&#34;tel:+249925343834&#34;&gt;Call (+249 925343834)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;address&#34;&gt;Address&lt;/h2&gt;
+
+&lt;iframe src=&#34;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15374.120420590332!2d32.56214077828581!3d15.56330097712211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6b3fbd769b059458!2sSolus!5e0!3m2!1sen!2sau!4v1558882781861!5m2!1sen!2sau&#34; width=&#34;600&#34; height=&#34;450&#34; frameborder=&#34;0&#34; style=&#34;border:0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;We would love to chat with you and have your feedbacks! Come and visit us on our offices! We run open hours every day (11-12:30pm).&lt;/p&gt;
+</content>
+      
+    </item>
+    
+    <item>
+      <title>products</title>
+      <link>/products/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>Solus Team</author>
+      <guid>/products/</guid>
+      <description></description>
+      
+      <content>
+
+&lt;figure&gt;
+    &lt;img src=&#34;/screenshot.png&#34;
+         alt=&#34;Meet our flgship product KS8223 from SZZT&amp;amp;ndash;the best POS ever!&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;KS8223&lt;/h4&gt;&lt;p&gt;Meet our flgship product KS8223 from SZZT&amp;ndash;the best POS ever!&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;vendor-and-hardware-specs&#34;&gt;Vendor and hardware specs&lt;/h1&gt;
+
+&lt;p&gt;Quality. First and foremost. This is our motto and this is what we are offering. The best in-market devices that can achieve our clients get the most out of their business.&lt;/p&gt;
+
+&lt;h2 id=&#34;smart-pos&#34;&gt;Smart POS&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Aisino A90&lt;/th&gt;
+&lt;th&gt;Aisino A70&lt;/th&gt;
+&lt;th&gt;SZZT KS8223*&lt;/th&gt;
+&lt;th&gt;S1000 (Android + Keypad)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;4 cpus, 1 GB Ram, Android 5&lt;/td&gt;
+&lt;td&gt;4 cpus, 1 GB Ram, Android 7&lt;/td&gt;
+&lt;td&gt;4 cpus, 1 GB Ram, Android 5&lt;/td&gt;
+&lt;td&gt;4 cpus, 1 GB Ram, Android 5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;PCI 5&lt;/td&gt;
+&lt;td&gt;PCI 5&lt;/td&gt;
+&lt;td&gt;PCI 4.1&lt;/td&gt;
+&lt;td&gt;PCI 4.1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5.5’ Display, 2600 mAh&lt;/td&gt;
+&lt;td&gt;5’ Display, 2000 mAh&lt;/td&gt;
+&lt;td&gt;5.5’ Display, 5000mAh&lt;/td&gt;
+&lt;td&gt;4.5’ Display, 4800mAh&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;SZZT is the #5 POS vendor in the world in terms of # sold devices
+Smart POS without Printer&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;smart-pos-w-t-printer&#34;&gt;Smart POS w/t Printer!&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Newland N700*&lt;/th&gt;
+&lt;th&gt;Centerm K9** :&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;4 cpus, 1 GB Ram, Android 5&lt;/td&gt;
+&lt;td&gt;4 cpus, 1 GB Ram, Android 7&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;PCI 5&lt;/td&gt;
+&lt;td&gt;PCI 5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5.5’ Display, 2600 mAh&lt;/td&gt;
+&lt;td&gt;5’ Display, 2000 mAh&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Newland is the #2 POS vendor in the world in terms of # sold devices&lt;br&gt;
+Centerm is the #3 POS vendor in the world in terms of # sold devices
+&lt;/p&gt;
+
+&lt;h1 id=&#34;qr-pos&#34;&gt;QR POS&lt;/h1&gt;
+
+&lt;p&gt;We also provide QR powered payment solutions.
+- QR/barcode reader
+- Passive and active QR payment
+- Powerful 3G/4G network
+- Works best for salesman and groceries
+- &lt;em&gt;ALL are PCI certified&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;available-devices-are&#34;&gt;Available devices are&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Centerm Q60&lt;/strong&gt;
+A powerful payment solution that works&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SZZT KS8312&lt;/strong&gt;
+The QR version of SZZT award winning KS8223&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aisino Q500&lt;/strong&gt;
+A neat and simple, mobile-like QR POS. You will never regret this one&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;linux-pos&#34;&gt;Linux POS&lt;/h1&gt;
+
+&lt;h2 id=&#34;newpos-8210&#34;&gt;NewPOS 8210*&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Specifications&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Hardware&lt;/td&gt;
+&lt;td&gt;32bit ARM 11, 64 RAM&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Certifications&lt;/td&gt;
+&lt;td&gt;ISO7811, ISO7812&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;SIM/SAM&lt;/td&gt;
+&lt;td&gt;1 SIM, 2 SAM&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Display and battery&lt;/td&gt;
+&lt;td&gt;5’ Display, 2000 mAh&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;NewPOS is in the world top 10 POS vendors in terms of # sold devices&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;mobile-pos-and-card-readers&#34;&gt;Mobile POS and card readers&lt;/h1&gt;
+
+&lt;p&gt;We also have variety of mobile POS and card readers that can be integrated with Soluspay App to work as a POS!&lt;/p&gt;
+
+&lt;h1 id=&#34;business-inquiries&#34;&gt;Business Inquiries&lt;/h1&gt;
+
+&lt;p&gt;If you are interested in any of our products, please reach out!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;email: &lt;a href=&#34;mailto:adonese@soluspay.net&#34;&gt;adonese@soluspay.net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;mobile: &lt;a href=&#34;tel:+249925343834&#34;&gt;Call (+249 925343834)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+      
+    </item>
+    
+    <item>
+      <title>team</title>
+      <link>/team/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>Solus Team</author>
+      <guid>/team/</guid>
+      <description></description>
+      
+      <content>
+
+&lt;h1 id=&#34;meet-our-team&#34;&gt;Meet our team&lt;/h1&gt;
+
+&lt;div class=&#34;box&#34;&gt;
+
+&lt;div&gt;
+Tilal Osman (CEO)
+&lt;br&gt;Solus CEO, with several years as Central Bank of Sudan Deputy Manager
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;a href=&#34;mailto:moe@soluspay.net&#34;&gt;Mohamed Jaafar (PM)&lt;/a&gt;
+&lt;br&gt;Our product manager and lead mobile development as well! Led the development of all of our products; Solus POS, SolusMe (consumer application). His unique UI/UX design is what makes our products great!
+&lt;p&gt;Swift and Kotlin Developer &lt;a href=&#34;https://github.com/wadjaafar&#34;&gt;GitHub Account&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+Mohamed Yousif (CTO)
+&lt;br&gt;Our company CTO; sometimes he do business as well. But he just achieves better as a developer.
+Go and Python Developer &lt;a href=&#34;https://github.com/adonese&#34;&gt;GitHub Account&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </content>
       
     </item>

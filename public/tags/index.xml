@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Home of noebs</title>
+    <title>Tags on Soluspay | Secure Payments</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Home of noebs</description>
+    <description>Recent content in Tags on Soluspay | Secure Payments</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 27 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Apr 2019 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>electronic-payment</title>
       <link>/tags/electronic-payment/</link>
-      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0200</pubDate>
       
       <guid>/tags/electronic-payment/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>noebs</title>
       <link>/tags/noebs/</link>
-      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0200</pubDate>
       
       <guid>/tags/noebs/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>authentication</title>
       <link>/tags/authentication/</link>
-      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0200</pubDate>
       
       <guid>/tags/authentication/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>des</title>
       <link>/tags/des/</link>
-      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0200</pubDate>
       
       <guid>/tags/des/</guid>
       <description></description>
@@ -50,7 +50,7 @@
     <item>
       <title>dukpt</title>
       <link>/tags/dukpt/</link>
-      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0200</pubDate>
       
       <guid>/tags/dukpt/</guid>
       <description></description>
@@ -59,7 +59,7 @@
     <item>
       <title>ebs error</title>
       <link>/tags/ebs-error/</link>
-      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0200</pubDate>
       
       <guid>/tags/ebs-error/</guid>
       <description></description>
@@ -68,7 +68,7 @@
     <item>
       <title>faq</title>
       <link>/tags/faq/</link>
-      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0200</pubDate>
       
       <guid>/tags/faq/</guid>
       <description></description>
@@ -77,7 +77,7 @@
     <item>
       <title>pin block</title>
       <link>/tags/pin-block/</link>
-      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0200</pubDate>
       
       <guid>/tags/pin-block/</guid>
       <description></description>
