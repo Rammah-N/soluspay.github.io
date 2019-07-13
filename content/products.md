@@ -4,7 +4,7 @@ menu = "noebs_menu"
 page = "list"
 +++
 
-{{< figure src="/screenshot.png" title="KS8223" caption="Meet our flgship product KS8223 from SZZT--the best POS ever!">}}
+{{< figure src="/screenshot.png" title="KS8223" caption="Meet our flagship product KS8223 from SZZT--the best POS ever! | Powered by our secure Solus App">}}
 
 
 # Vendor and hardware specs
@@ -46,7 +46,7 @@ A powerful payment solution that works
 * **SZZT KS8312**
 The QR version of SZZT award winning KS8223
 * **Aisino Q500**
-A neat and simple, mobile-like QR POS. You will never regret this one
+A neat and simple, mobile-like QR POS. You will never regret this one.
 
 # Linux POS
 ## NewPOS 8210*
