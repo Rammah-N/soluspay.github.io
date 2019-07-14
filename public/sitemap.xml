@@ -34,8 +34,18 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-04-27T00:00:00+02:00</lastmod>
+    <lastmod>2019-07-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/careers/</loc>
+    <lastmod>2019-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -96,11 +106,6 @@
     <loc>/tags/pin-block/</loc>
     <lastmod>2019-04-20T00:00:00+02:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>

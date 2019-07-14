@@ -4,7 +4,26 @@ menu = "noebs_menu"
 page = "list"
 +++
 
-{{< figure src="/screenshot.png" title="KS8223" caption="Meet our flagship product KS8223 from SZZT--the best POS ever! | Powered by our secure Solus App">}}
+<!-- {{< figure src="/screenshot.png" title="KS8223" caption="Meet our flagship product KS8223 from SZZT--the best POS ever! | Powered by our secure Solus App">}} -->
+
+# Commercial platform
+A modern, feature rich ecommerce platform! Built with the latest technologies and it is made as clean and neat as possible to help you have the best payment experience. The storefront is written in PWA which allows your customers to buy even when they are offline (for better sales and customers experience). Features include:
+-	GraphQL support: the apis are all exposed as GraphQL endpoints, you can use them in the browser, in your android and iOS apps
+-	Built with ❤ with Django! An ecommerce platform for perfectionists!
+-	The frontend (storefront) is written in ReactJs and exposed as PWA. This will your users to shop even when they are offline
+-	It uses Postgresql and Redis for database and caching
+-	Built in support for localization and languages
+-	Administrator Dashboard: the admins have control of all of the users, products and the processes
+-	Powered by noebs payment gateway for maximum performance and security
+
+# noebs Payment Gateway (middleware)
+[noebs](https://noebs.dev) is a free and open source payment gateway. It was developed from the beginning to solve challenging tasks in electronic payment and to support variety of use cases (extensibility). It is written in Go and it is the fastest and the most secure middleware in the market. Above all that, the product was thoroughly tested, it is now used by different clients (it is EBS certified). For more information about the technical aspects of noebs, please visit our website: noebs technical review.
+-	In-house developed with modern technical stack
+-	Free and open source and will always be supported
+-	Built for scalability and high-performance workloads. Your system will scale as much as your hardware will allow
+-	Database agnostic layer, with huge part of the system uses redis 
+-	Built in support for load balancers, HTTP/2, and TLS
+-	Clear separation of layers and clean code
 
 
 # Vendor and hardware specs
