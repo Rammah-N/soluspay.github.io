@@ -5262,7 +5262,7 @@ a.nav-item.is-tab.is-active {
 .nav {
   -ms-flex-align: stretch;
   align-items: stretch;
-  background-color: #fff;
+  background-color: inherit;
   display: flex;
   position: relative;
   z-index: 2;
@@ -6638,8 +6638,19 @@ a.panel-block:hover {
 }
 
 .footer {
-  background-color: #f5f7fa;
   padding: 40px 20px 80px;
+}
+
+/* Footer menu */
+
+.footer-menu {
+  background-color: #484848;
+  color: #cfcfcf !important;
+  width: 100%;
+}
+
+h1.title.footer-item{
+  color: #eeeeee;
 }
 
 code,

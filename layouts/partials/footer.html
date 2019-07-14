@@ -1,39 +1,41 @@
-<section class="section">
+<section class="section footer-menu">
 
-{{ if .Site.GoogleAnalytics }}
-{{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
-{{ if .Site.Params.matomoAnalytics }}
-{{- partial "analytics/matomo" . -}}
-{{ end }}
-{{ if .Site.Params.fathomAnalytics }}
-{{- partial "analytics/fathom" . -}}
-{{ end }}
+  {{ if .Site.GoogleAnalytics }}
+  {{ template "_internal/google_analytics_async.html" . }}
+  {{ end }}
+  {{ if .Site.Params.matomoAnalytics }}
+  {{- partial "analytics/matomo" . -}}
+  {{ end }}
+  {{ if .Site.Params.fathomAnalytics }}
+  {{- partial "analytics/fathom" . -}}
+  {{ end }}
 
+  <footer>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-left">
+          <a class="nav-item" href="/">
+            <h1 class="title is-4 footer-item">Solus</h1>
+          </a>
 
-<div class="container">
-  <nav class="nav">
-    <div class="nav-left">
-      <a class="nav-item" href="/">
-        <h1 class="title is-4">Solus</h1>
-      </a>
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.noebs_menu }}
+          <a class="nav-item" href="{{ .URL }}" title="{{ .Title }}">
 
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.noebs_menu }}
-      <a class="nav-item" href="{{ .URL }}" title="{{ .Title }}">
-
-        <h1 class="title is-4">{{ .Name }}</h1>
-      </a>
-      {{ end }}
-      </div>
+            <h1 class="title is-4 footer-item">{{ .Name }}</h1>
+          </a>
+          {{ end }}
+        </div>
       </nav>
-      </div>
-    </section>
-    <div class="container has-text-centered">
-      <p>{{ .Site.Copyright | safeHTML }}</p>
-      {{if .Site.Params.Info.poweredby}}
-        <p>Built with ❤ by your friends at Shargii</p>
-      {{ end }}
     </div>
   
+
+<div class="container has-text-centered">
+  <p>{{ .Site.Copyright | safeHTML }}</p>
+  {{if .Site.Params.Info.poweredby}}
+  <p>Built with ❤ by your friends at Shargii</p>
+  {{ end }}
+</div>
+</section>
+</footer>
 </html>
