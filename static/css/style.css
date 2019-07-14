@@ -401,6 +401,7 @@ table th {
 
 .has-text-centered {
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .block:not(:last-child),
