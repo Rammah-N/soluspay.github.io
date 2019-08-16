@@ -2,12 +2,17 @@
 {{ partial "nav" . }}
 <section class="section">
   <div class="container">
+    <h1 class="title">{{ .Title }}</h1>
+    {{ if and (.Site.Params.Info.adsense) (.Params.adsenseTop) }}
+    {{ partial "adsense" . }}
+    {{ end }}
+    <div class="content">
+      {{ .Content }}
+    </div>
 
-    {{.Content}}
-    
   </div>
 </section>
-
-<!-- {{ partial "pager" . }} -->
+{{ if (and (.Site.Params.Info.codeCopy) (findRE "<pre" .Content 1)) }}
+    <script src="/js/copycode.js"></script>
+{{ end }}
 {{ partial "footer" . }}
-

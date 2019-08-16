@@ -49,63 +49,53 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-04-27T00:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-04-27T00:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/electronic-payment/</loc>
     <lastmod>2019-04-27T00:00:00+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/noebs/</loc>
     <lastmod>2019-04-27T00:00:00+02:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-04-27T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-04-27T00:00:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/authentication/</loc>
     <lastmod>2019-04-20T00:00:00+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/des/</loc>
     <lastmod>2019-04-20T00:00:00+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/dukpt/</loc>
     <lastmod>2019-04-20T00:00:00+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/ebs-error/</loc>
     <lastmod>2019-04-20T00:00:00+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/faq/</loc>
     <lastmod>2019-04-20T00:00:00+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/pin-block/</loc>
     <lastmod>2019-04-20T00:00:00+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

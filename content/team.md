@@ -6,7 +6,7 @@ menu = "noebs_menu"
 
 # Meet our team
 
-<div class="box">
+<section class="box">
 
 <div>
 Tilal Osman (CEO)
@@ -26,5 +26,5 @@ Mohamed Yousif (CTO)
 Go and Python Developer <a href="https://github.com/adonese">GitHub Account</a>
 </div>
 
-</div>
+</section>
 
