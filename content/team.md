@@ -10,7 +10,7 @@ menu = "noebs_menu"
 
 <div>
 Tilal Osman (CEO)
-<br>Solus CEO, with several years as Central Bank of Sudan Deputy Manager
+Solus CEO, with several years as Central Bank of Sudan Deputy Manager
 </div>
 
 <div>
@@ -22,7 +22,7 @@ Tilal Osman (CEO)
 
 <div>
 Mohamed Yousif (CTO)
-<br>Our company CTO; sometimes he do business as well. But he just achieves better as a developer.
+Our company CTO; sometimes he do business as well. But he just achieves better as a developer.
 Go and Python Developer <a href="https://github.com/adonese">GitHub Account</a>
 </div>
 

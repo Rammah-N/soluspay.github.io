@@ -4,26 +4,33 @@ menu = "noebs_menu"
 page = "list"
 +++
 
+<link rel="preload" href="/img/1.jpg" as="image">
+<link rel="preload" href="/img/2.jpg" as="image">
+<link rel="preload" href="/img/3.jpg" as="image">
+<link rel="preload" href="/img/4.jpg" as="image">
+<link rel="preload" href="/img/5.jpg" as="image">
 
 # Commercial platform
 A modern, feature rich ecommerce platform! Built with the latest technologies and it is made as clean and neat as possible to help you have the best payment experience. The storefront is written in PWA which allows your customers to buy even when they are offline (for better sales and customers experience). Features include:
--	GraphQL support: the apis are all exposed as GraphQL endpoints, you can use them in the browser, in your android and iOS apps
--	Built with ❤ with Django! An ecommerce platform for perfectionists!
--	The frontend (storefront) is written in ReactJs and exposed as PWA. This will your users to shop even when they are offline
--	It uses Postgresql and Redis for database and caching
--	Built in support for localization and languages
--	Administrator Dashboard: the admins have control of all of the users, products and the processes
--	Powered by noebs payment gateway for maximum performance and security
+
+- GraphQL support: the apis are all exposed as GraphQL endpoints, you can use them in the browser, in your android and iOS apps
+- Built with ❤ with Django! An ecommerce platform for perfectionists!
+- The frontend (storefront) is written in ReactJs and exposed as PWA. This will your users to shop even when they are offline
+- It uses Postgresql and Redis for database and caching
+- Built in support for localization and languages
+- Administrator Dashboard: the admins have control of all of the users, products and the processes
+- Powered by noebs payment gateway for maximum performance and security
 
 # noebs Payment Gateway (middleware)
 (PCI-DSS Compliant)
 [noebs](https://noebs.dev) is a free and open source payment gateway. It was developed from the beginning to solve challenging tasks in electronic payment and to support variety of use cases (extensibility). It is written in Go and it is the fastest and the most secure middleware in the market. Above all that, the product was thoroughly tested, it is now used by different clients (it is EBS certified). For more information about the technical aspects of noebs, please visit our website: noebs technical review.
--	In-house developed with modern technical stack
--	Free and open source and will always be supported
--	Built for scalability and high-performance workloads. Your system will scale as much as your hardware will allow
--	Database agnostic layer, with huge part of the system uses redis 
--	Built in support for load balancers, HTTP/2, and TLS
--	Clear separation of layers and clean code
+
+- In-house developed with modern technical stack
+- Free and open source and will always be supported
+- Built for scalability and high-performance workloads. Your system will scale as much as your hardware will allow
+- Database agnostic layer, with huge part of the system uses redis 
+- Built in support for load balancers, HTTP/2, and TLS
+- Clear separation of layers and clean code
 
 
 # Vendor and hardware specs
@@ -41,7 +48,6 @@ Quality. First and foremost. This is our motto and this is what we are offering.
 Smart POS without Printer*
 
 ## Smart POS w/t Printer!
-
 | Newland N700* | Centerm K9** :|
 |----------------|--------------|
 | 4 cpus, 1 GB Ram, Android 5 | 4 cpus, 1 GB Ram, Android 7 |
@@ -52,6 +58,7 @@ Newland is the #2 POS vendor in the world in terms of # sold devices<br>
 Centerm is the #3 POS vendor in the world in terms of # sold devices
 
 # QR POS
+
 We also provide QR powered payment solutions.
 - QR/barcode reader
 - Passive and active QR payment
@@ -81,6 +88,15 @@ A neat and simple, mobile-like QR POS. You will never regret this one.
 
 # Mobile POS and card readers
 We also have variety of mobile POS and card readers that can be integrated with Soluspay App to work as a POS! 
+
+<div class="flex">
+<img src="/img/5.jpg" loading="lazy" width="300">
+<img src="/img/4.jpg" loading="lazy" width="300">
+<img src="/img/2.jpg" loading="lazy" width="300">
+<img src="/img/3.jpg" loading="lazy" width="300">
+<img src="/img/1.jpg" alt="KS8223 Android POS" width="300">
+
+</div>
 
 
 # Business Inquiries
