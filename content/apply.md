@@ -5,6 +5,7 @@ menu = "noebs_menu"
 modified_date = "2019-07-13"
 url = "careers"
 +++
+# Junior Front end engineer
 
 # Senior Business Development Position
 Solus offers software services in the field of fintech and electronic payments. We also offer technical and security consultancy.

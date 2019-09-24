@@ -167,25 +167,31 @@
 
 &lt;h1 id=&#34;commercial-platform&#34;&gt;Commercial platform&lt;/h1&gt;
 
-&lt;p&gt;A modern, feature rich ecommerce platform! Built with the latest technologies and it is made as clean and neat as possible to help you have the best payment experience. The storefront is written in PWA which allows your customers to buy even when they are offline (for better sales and customers experience). Features include:
--   GraphQL support: the apis are all exposed as GraphQL endpoints, you can use them in the browser, in your android and iOS apps
--   Built with ❤ with Django! An ecommerce platform for perfectionists!
--   The frontend (storefront) is written in ReactJs and exposed as PWA. This will your users to shop even when they are offline
--   It uses Postgresql and Redis for database and caching
--   Built in support for localization and languages
--   Administrator Dashboard: the admins have control of all of the users, products and the processes
--   Powered by noebs payment gateway for maximum performance and security&lt;/p&gt;
+&lt;p&gt;A modern, feature rich ecommerce platform! Built with the latest technologies and it is made as clean and neat as possible to help you have the best payment experience. The storefront is written in PWA which allows your customers to buy even when they are offline (for better sales and customers experience). Features include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GraphQL support: the apis are all exposed as GraphQL endpoints, you can use them in the browser, in your android and iOS apps&lt;/li&gt;
+&lt;li&gt;Built with ❤ with Django! An ecommerce platform for perfectionists!&lt;/li&gt;
+&lt;li&gt;The frontend (storefront) is written in ReactJs and exposed as PWA. This will your users to shop even when they are offline&lt;/li&gt;
+&lt;li&gt;It uses Postgresql and Redis for database and caching&lt;/li&gt;
+&lt;li&gt;Built in support for localization and languages&lt;/li&gt;
+&lt;li&gt;Administrator Dashboard: the admins have control of all of the users, products and the processes&lt;/li&gt;
+&lt;li&gt;Powered by noebs payment gateway for maximum performance and security&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&#34;noebs-payment-gateway-middleware&#34;&gt;noebs Payment Gateway (middleware)&lt;/h1&gt;
 
 &lt;p&gt;(PCI-DSS Compliant)
-&lt;a href=&#34;https://noebs.dev&#34; target=&#34;_blank&#34;&gt;noebs&lt;/a&gt; is a free and open source payment gateway. It was developed from the beginning to solve challenging tasks in electronic payment and to support variety of use cases (extensibility). It is written in Go and it is the fastest and the most secure middleware in the market. Above all that, the product was thoroughly tested, it is now used by different clients (it is EBS certified). For more information about the technical aspects of noebs, please visit our website: noebs technical review.
-- In-house developed with modern technical stack
-- Free and open source and will always be supported
-- Built for scalability and high-performance workloads. Your system will scale as much as your hardware will allow
-- Database agnostic layer, with huge part of the system uses redis
-- Built in support for load balancers, HTTP/2, and TLS
-- Clear separation of layers and clean code&lt;/p&gt;
+&lt;a href=&#34;https://noebs.dev&#34; target=&#34;_blank&#34;&gt;noebs&lt;/a&gt; is a free and open source payment gateway. It was developed from the beginning to solve challenging tasks in electronic payment and to support variety of use cases (extensibility). It is written in Go and it is the fastest and the most secure middleware in the market. Above all that, the product was thoroughly tested, it is now used by different clients (it is EBS certified). For more information about the technical aspects of noebs, please visit our website: noebs technical review.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;In-house developed with modern technical stack&lt;/li&gt;
+&lt;li&gt;Free and open source and will always be supported&lt;/li&gt;
+&lt;li&gt;Built for scalability and high-performance workloads. Your system will scale as much as your hardware will allow&lt;/li&gt;
+&lt;li&gt;Database agnostic layer, with huge part of the system uses redis&lt;/li&gt;
+&lt;li&gt;Built in support for load balancers, HTTP/2, and TLS&lt;/li&gt;
+&lt;li&gt;Clear separation of layers and clean code&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&#34;vendor-and-hardware-specs&#34;&gt;Vendor and hardware specs&lt;/h1&gt;
 
@@ -356,22 +362,27 @@ A neat and simple, mobile-like QR POS. You will never regret this one.&lt;/li&gt
 
 &lt;h1 id=&#34;meet-our-team&#34;&gt;Meet our team&lt;/h1&gt;
 
-&lt;div class=&#34;box&#34;&gt;
+&lt;section class=&#34;box&#34;&gt;
+
+&lt;div&gt;
 Tilal Osman (CEO)
 Solus CEO, with several years as Central Bank of Sudan Deputy Manager
 &lt;/div&gt;
 
-&lt;div class=&#34;box&#34;&gt;
+&lt;div&gt;
 &lt;a href=&#34;mailto:moe@soluspay.net&#34;&gt;Mohamed Jaafar (PM)&lt;/a&gt;
-Our product manager and lead mobile development as well! Led the development of all of our products; Solus POS, SolusMe (consumer application). His unique UI/UX design is what makes our products great!
-Swift and Kotlin Developer &lt;a href=&#34;https://github.com/wadjaafar&#34;&gt;GitHub Account&lt;/a&gt;
+&lt;br&gt;Our product manager and lead mobile development as well! Led the development of all of our products; Solus POS, SolusMe (consumer application). His unique UI/UX design is what makes our products great!
+&lt;p&gt;Swift and Kotlin Developer &lt;a href=&#34;https://github.com/wadjaafar&#34;&gt;GitHub Account&lt;/a&gt;
+&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&#34;box&#34;&gt;
+&lt;div&gt;
 Mohamed Yousif (CTO)
 Our company CTO; sometimes he do business as well. But he just achieves better as a developer.
 Go and Python Developer &lt;a href=&#34;https://github.com/adonese&#34;&gt;GitHub Account&lt;/a&gt;
 &lt;/div&gt;
+
+&lt;/section&gt;
 </content>
       
     </item>
