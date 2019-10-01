@@ -6899,11 +6899,9 @@ div.subtitle.tags {
 }
 
 
-.box {
-  display: flex;
-}
 
-.box1 {
+
+.box {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

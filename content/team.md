@@ -7,7 +7,6 @@ menu = "noebs_menu"
 # Meet our team
 
 <section class="box">
-
 <div>
 Tilal Osman (CEO)
 Solus CEO, with several years as Central Bank of Sudan Deputy Manager
@@ -25,6 +24,24 @@ Mohamed Yousif (CTO)
 Our company CTO; sometimes he do business as well. But he just achieves better as a developer.
 Go and Python Developer <a href="https://github.com/adonese">GitHub Account</a>
 </div>
+</section>
 
+<div>
+Amjad Abdeen (CFO)
+Solus CEO, with several years as Central Bank of Sudan Deputy Manager
+</div>
+
+<div>
+Fakhr Eldeen - Senior Backend Engineer
+<br>Our product manager and lead mobile development as well! Led the development of all of our products; Solus POS, SolusMe (consumer application). His unique UI/UX design is what makes our products great!
+<p>Swift and Kotlin Developer <a href="https://github.com/wadjaafar">GitHub Account</a>
+</p>
+</div>
+
+<div>
+Mumin Morgan
+Our company CTO; sometimes he do business as well. But he just achieves better as a developer.
+Go and Python Developer <a href="https://github.com/adonese">GitHub Account</a>
+</div>
 </section>
 
