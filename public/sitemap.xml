@@ -34,8 +34,43 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-07-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-08-23T00:00:00+02:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/electronic-payment/</loc>
+    <lastmod>2019-08-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/owasp/</loc>
+    <lastmod>2019-08-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/noebs/</loc>
+    <lastmod>2019-08-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/owasp/</loc>
+    <lastmod>2019-08-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-08-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/security/</loc>
+    <lastmod>2019-08-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-08-23T00:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -46,26 +81,6 @@
   <url>
     <loc>/about/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/electronic-payment/</loc>
-    <lastmod>2019-04-27T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/noebs/</loc>
-    <lastmod>2019-04-27T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2019-04-27T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-04-27T00:00:00+02:00</lastmod>
   </url>
   
   <url>

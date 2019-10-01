@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>Posts</title>
+      <link>/post/</link>
+      <pubDate>Fri, 23 Aug 2019 00:00:00 +0200</pubDate>
+      <author>Solus Team</author>
+      <guid>/post/</guid>
+      <description></description>
+      
+      <content></content>
+      
+    </item>
+    
+    <item>
       <title>careers</title>
       <link>/careers/</link>
       <pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate>
@@ -20,6 +32,8 @@
       <description></description>
       
       <content>
+
+&lt;h1 id=&#34;junior-front-end-engineer&#34;&gt;Junior Front end engineer&lt;/h1&gt;
 
 &lt;h1 id=&#34;senior-business-development-position&#34;&gt;Senior Business Development Position&lt;/h1&gt;
 
@@ -106,18 +120,6 @@
 
 &lt;p&gt;See &lt;a href=&#34;/team&#34;&gt;our team section&lt;/a&gt;&lt;/p&gt;
 </content>
-      
-    </item>
-    
-    <item>
-      <title>Posts</title>
-      <link>/post/</link>
-      <pubDate>Sat, 27 Apr 2019 00:00:00 +0200</pubDate>
-      <author>Solus Team</author>
-      <guid>/post/</guid>
-      <description></description>
-      
-      <content></content>
       
     </item>
     
@@ -358,31 +360,46 @@ A neat and simple, mobile-like QR POS. You will never regret this one.&lt;/li&gt
       <guid>/team/</guid>
       <description></description>
       
-      <content>
-
-&lt;h1 id=&#34;meet-our-team&#34;&gt;Meet our team&lt;/h1&gt;
-
-&lt;section class=&#34;box&#34;&gt;
-
-&lt;div&gt;
+      <content>&lt;div class=&#34;box&#34;&gt;
+&lt;div class=&#34;flex-item&#34;&gt;
 Tilal Osman (CEO)
+&lt;br&gt;
 Solus CEO, with several years as Central Bank of Sudan Deputy Manager
 &lt;/div&gt;
 
-&lt;div&gt;
+&lt;div class=&#34;flex-item&#34;&gt;
 &lt;a href=&#34;mailto:moe@soluspay.net&#34;&gt;Mohamed Jaafar (PM)&lt;/a&gt;
 &lt;br&gt;Our product manager and lead mobile development as well! Led the development of all of our products; Solus POS, SolusMe (consumer application). His unique UI/UX design is what makes our products great!
 &lt;p&gt;Swift and Kotlin Developer &lt;a href=&#34;https://github.com/wadjaafar&#34;&gt;GitHub Account&lt;/a&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div&gt;
-Mohamed Yousif (CTO)
+&lt;div class=&#34;flex-item&#34;&gt;
+Mohamed Yousif (CTO)&lt;br&gt;
 Our company CTO; sometimes he do business as well. But he just achieves better as a developer.
 Go and Python Developer &lt;a href=&#34;https://github.com/adonese&#34;&gt;GitHub Account&lt;/a&gt;
 &lt;/div&gt;
 
-&lt;/section&gt;
+&lt;div class=&#34;flex-item&#34;&gt;
+Amjad Abdeen (CFO)
+&lt;br&gt;
+Our CFO and head of operation
+&lt;/div&gt;
+
+&lt;div class=&#34;flex-item&#34;&gt;
+Fakhr Eldeen - Senior Backend Engineer
+&lt;br&gt;
+A senior Java and Angular developer. Does the backend and frontend as well.
+
+&lt;/div&gt;
+
+&lt;div class=&#34;flex-item&#34;&gt;
+Mumin Morgan
+&lt;br&gt;
+Our UI/UX Guy!
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </content>
       
     </item>

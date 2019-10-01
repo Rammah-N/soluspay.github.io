@@ -6900,11 +6900,11 @@ div.subtitle.tags {
 
 
 .box {
-  display: flex;
+  display: flex 1 1 25%;
+  justify-content: flex-start;
+  
 }
 
-.box1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.flex-item{
+  padding: 20px;
 }

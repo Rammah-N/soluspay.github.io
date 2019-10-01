@@ -6,7 +6,7 @@
     <description>Recent content in electronic-payment on Soluspay | Secure Payments</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 27 Apr 2019 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 23 Aug 2019 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="/tags/electronic-payment/index.xml" rel="self" type="application/rss+xml" />
     
@@ -64,6 +64,16 @@
       
       <guid>/guides/use-noebs/</guid>
       <description>Why Go? Go is really fast! Our application can happily serve more than 60k req/sec. The bottleneck will never be on your payment gateway service! Plus, Go helps with many of the problems I faced while working with Python, the static typing can prevent your errors from occurring only at runtime, and your code will compile into a single binary that you just run. I’ve been very excited to write web services Go and this project offers me just that!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/owasp/</link>
+      <pubDate>Fri, 23 Aug 2019 00:00:00 +0200</pubDate>
+      
+      <guid>/owasp/</guid>
+      <description>OWASP The Open Web Application Security Project is an international non-profit organization dedicated to web application security. They&amp;rsquo;re best know by OWASP Top 10, a curated list of top 10 most critical security risks. This post will highlight some of the practices we are following at Solus while building our systems.
+SQL injection This is one of the very common and the first item in OWASP Top 10. In it&amp;rsquo;s simplest form, it is about sending a sql code through e.</description>
     </item>
     
   </channel>

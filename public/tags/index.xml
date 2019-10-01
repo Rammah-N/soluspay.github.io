@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Soluspay | Secure Payments</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 27 Apr 2019 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 23 Aug 2019 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>electronic-payment</title>
       <link>/tags/electronic-payment/</link>
-      <pubDate>Sat, 27 Apr 2019 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 23 Aug 2019 00:00:00 +0200</pubDate>
       
       <guid>/tags/electronic-payment/</guid>
       <description></description>
@@ -23,9 +23,27 @@
     <item>
       <title>noebs</title>
       <link>/tags/noebs/</link>
-      <pubDate>Sat, 27 Apr 2019 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 23 Aug 2019 00:00:00 +0200</pubDate>
       
       <guid>/tags/noebs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>owasp</title>
+      <link>/tags/owasp/</link>
+      <pubDate>Fri, 23 Aug 2019 00:00:00 +0200</pubDate>
+      
+      <guid>/tags/owasp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>/tags/security/</link>
+      <pubDate>Fri, 23 Aug 2019 00:00:00 +0200</pubDate>
+      
+      <guid>/tags/security/</guid>
       <description></description>
     </item>
     
