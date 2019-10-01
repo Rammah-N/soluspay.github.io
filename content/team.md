@@ -5,6 +5,7 @@ menu = "noebs_menu"
 +++
 
 <div class="box">
+
 <div class="flex-item">
 Tilal Osman (CEO)
 <br>
@@ -38,10 +39,8 @@ A senior Java and Angular developer. Does the backend and frontend as well.
 </div>
 
 <div class="flex-item">
-Mumin Morgan
-<br>
-Our UI/UX Guy!
-</div>
+Mumin Morgan<br>
 
+Our Design guy! Loves building great UI and UX for our users!
 </div>
-
+</div>

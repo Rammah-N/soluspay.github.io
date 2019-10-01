@@ -361,6 +361,7 @@ A neat and simple, mobile-like QR POS. You will never regret this one.&lt;/li&gt
       <description></description>
       
       <content>&lt;div class=&#34;box&#34;&gt;
+
 &lt;div class=&#34;flex-item&#34;&gt;
 Tilal Osman (CEO)
 &lt;br&gt;
@@ -394,12 +395,11 @@ A senior Java and Angular developer. Does the backend and frontend as well.
 &lt;/div&gt;
 
 &lt;div class=&#34;flex-item&#34;&gt;
-Mumin Morgan
-&lt;br&gt;
-Our UI/UX Guy!
-&lt;/div&gt;
+Mumin Morgan&lt;br&gt;
 
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+Our Design guy! Loves building great UI and UX for our users!
+&lt;/div&gt;
+&lt;/div&gt;
 </content>
       
     </item>
