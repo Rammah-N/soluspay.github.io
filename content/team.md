@@ -4,7 +4,7 @@ title = "team"
 menu = "noebs_menu"
 +++
 
-<div class="box">
+<div class="box-team">
 
 <div class="flex-item">
 Tilal Osman (CEO)

@@ -6899,9 +6899,10 @@ div.subtitle.tags {
 }
 
 
-.box {
-  display: flex 1 1 25%;
+.box-team {
+  display: flex;
   justify-content: flex-start;
+  flex-direction: column;
   
 }
 
