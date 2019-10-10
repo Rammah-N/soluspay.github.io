@@ -2492,7 +2492,7 @@ a.box:active {
 }
 
 .title {
-	color: #e39777;
+	color: #222324;
 }
 
 .title code {
@@ -6919,6 +6919,9 @@ div.subtitle.tags {
 		color: #e39777 !important;
 	}
 	.content h1, .content h2, .content h3 .content h4 {
+		color: #e4e4e4 !important;
+	}
+	.title {
 		color: #e4e4e4 !important;
 	}
 
