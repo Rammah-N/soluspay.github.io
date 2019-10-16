@@ -124,6 +124,76 @@
     </item>
     
     <item>
+      <title>privacy</title>
+      <link>/privacy/</link>
+      <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
+      <author>Solus Team</author>
+      <guid>/privacy/</guid>
+      <description></description>
+      
+      <content>
+
+&lt;h1 id=&#34;privacy&#34;&gt;Privacy&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We &lt;em&gt;only&lt;/em&gt; store your data when you opt to&lt;/li&gt;
+&lt;li&gt;All of your data are securely encrypted and safe; EVEN us cannot view it&lt;/li&gt;
+&lt;li&gt;We don&amp;rsquo;t log any of your transactions; we deliberately mask your Card Info for general support purposes&lt;/li&gt;
+&lt;li&gt;You can choose, at any time to remove all of your information&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;preview-your-terms-of-use&#34;&gt;Preview your Terms of Use&lt;/h1&gt;
+
+&lt;p&gt;Terms of Use of &lt;a href=&#34;https://soluspay.net&#34; target=&#34;_blank&#34;&gt;https://soluspay.net&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;welcome-to-the-cashq-website-the-website&#34;&gt;Welcome to the CashQ website (the &amp;ldquo;Website&amp;rdquo;).&lt;/h2&gt;
+
+&lt;p&gt;CashQ provides this Website and Services (located at &lt;a href=&#34;https://soluspay.net&#34; target=&#34;_blank&#34;&gt;https://soluspay.net&lt;/a&gt;) to you subject to the notices, terms, and conditions set forth in these terms (the &amp;ldquo;Terms of Use&amp;rdquo;). In addition, when you use any of our Services, you will be subject to the rules, guidelines, policies, terms, and conditions applicable to such service, and they are incorporated into this Terms of Use by this reference. This Terms of Service was created by Terms of Use Template and the Disclaimer Sample.&lt;/p&gt;
+
+&lt;p&gt;These Terms of Use are effective as of 10/16/2019.&lt;/p&gt;
+
+&lt;p&gt;Your eligibility for use of the Website is contingent upon meeting the following conditions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You are at least 18 years of age&lt;/li&gt;
+&lt;li&gt;You use the Website and Services according to these Terms of Use and all applicable laws and regulations determined by the state and country of residence&lt;/li&gt;
+&lt;li&gt;You provide complete and accurate registration information and maintain accurate registration information on the Webite&lt;/li&gt;
+&lt;li&gt;You agree and understand that CashQ may, at any time, and without prior notice, revoke and/or cancel your access if you fail to meet these criteria or violate any portion of these Terms of Use&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;use-of-this-website&#34;&gt;Use of this Website&lt;/h2&gt;
+
+&lt;p&gt;In connection with your use of our Website, you must act responsibly and exercise good judgment. Without limiting the foregoing, you will not:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Violate any local, state, provincial, national, or other law or regulation, or any order of a court&lt;/li&gt;
+&lt;li&gt;Infringe the rights of any person or entity, including without limitation, their intellectual property, privacy, publicity or contractual rights&lt;/li&gt;
+&lt;li&gt;Interfere with or damage our Services, including, without limitation, through the use of viruses, cancel bots, Trojan horses, harmful code, flood pings, denial-of-service attacks, packet or IP spoofing, forged routing or electronic mail address information or similar methods or technology&lt;/li&gt;
+&lt;li&gt;Use automated scripts to collect information or otherwise interact with the Services or the Website&lt;/li&gt;
+&lt;li&gt;Enter into this agreement on behalf of another person or entity without consent or the legal capacity to make such agreements as a representative of an organization or entity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;intellectual-property&#34;&gt;Intellectual Property&lt;/h2&gt;
+
+&lt;p&gt;All code, text, software, scripts, graphics, files, photos, images, logos, and materials contained on this Website, or within the Services, are the sole property of CashQ.&lt;/p&gt;
+
+&lt;p&gt;Unauthorized use of any materials contained on this Website or within the Service may violate copyright laws, trademark laws, the laws of privacy and publicity, and/or other regulations and statutes. If you believe that any of the materials infringe on any third party&amp;rsquo;s rights, please contact CashQ immediately at the address provided below.
+Third Party Websites&lt;/p&gt;
+
+&lt;p&gt;Our Website may link you to other sites on the Internet or otherwise include references to information, documents, software, materials and/or services provided by other parties. These websites may contain information or material that some people may find inappropriate or offensive.&lt;/p&gt;
+
+&lt;p&gt;These other websites and parties are not under our control, and you acknowledge that we are not responsible for the accuracy, copyright compliance, legality, decency, or any other aspect of the content of such sites, nor are we responsible for errors or omissions in any references to other parties or their products and services. The inclusion of such a link or reference is provided merely as a convenience and does not imply endorsement of, or association with, the Website or party by us, or any warranty of any kind, either express or implied.
+Disclaimer of Warranty and Limitation of Liability&lt;/p&gt;
+
+&lt;p&gt;The Website is provided &amp;ldquo;AS IS.&amp;rdquo; appfigures, its suppliers, officers, directors, employees, and agents exclude and disclaim all representations and warranties, express or implied, related to this Website or in connection with the Services. You exclude CashQ from all liability for damages related to or arising out of the use of this Website.
+Changes to these Terms of Use&lt;/p&gt;
+
+&lt;p&gt;CashQ retains the right to, at any time, modify or discontinue, any or all parts of the Website without notice.&lt;/p&gt;
+</content>
+      
+    </item>
+    
+    <item>
       <title>contact</title>
       <link>/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
