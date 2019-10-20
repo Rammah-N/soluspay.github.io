@@ -16,20 +16,16 @@
 
         <div class="nav-right">
           <nav class="nav-item level is-mobile">
-            {{- $social := ( .Site.Params.social ) -}}
-            {{- range $platform := $social.config.platforms -}}
-            {{- with $username := ( index $social $platform ) -}}
-            <a class="level-item" aria-label="{{ $platform }}"
-              href='{{ print ( index $.Site.Data.theme.social.base $platform ) $username }}' target='_blank'
+            <a class="level-item" aria-label="Download CashQ!"
+              href='https://play.google.com/store/apps/details?id=net.soluspay.cashq' target='_blank'
               rel='noopener'>
               <span class="icon">
-                <i class>
-                  {{- partial "svg/icons" $platform -}}
+                <i>
+                  {{- partial "svg/icons" "google_play" -}}
                 </i>
               </span>
+              Download CashQ!
             </a>
-            {{- end -}}
-            {{- end -}}
           </nav>
         </div>
 
