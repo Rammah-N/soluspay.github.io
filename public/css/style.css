@@ -5086,7 +5086,7 @@ a.box:active {
 
 .level-item {
 	stroke: currentColor;
-	fill: none;
+	fill: black;
 	position: relative;
 	top: 0.1111111111111111em;
 }
@@ -6916,7 +6916,7 @@ div.subtitle.tags {
 		color: #e4e4e4 !important;
 	}
 	a{
-		color: #e39777 !important;
+		color: #e4e4e4 !important;
 	}
 	.content h1, .content h2, .content h3 .content h4 {
 		color: #e4e4e4 !important;
@@ -6925,6 +6925,9 @@ div.subtitle.tags {
 		color: #e4e4e4 !important;
 	}
 
+	.level-item {
+		fill: white;
+	}
 	img {
 		filter: grayscale(30%);
 	}
