@@ -14,3 +14,6 @@ CashQ is a mobile payment application in Sudan. It connects our users, through t
 - More secure than any other application
 - Great UI/UX to make payment experience as seamless as possible
 - Features many [privacy](/privacy) features that make it the best app to use
+
+# Download it now!
+- [From Google Play](https://play.google.com/store/apps/details?id=net.soluspay.cashq)
