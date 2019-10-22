@@ -1,6 +1,6 @@
 +++
 title = "contact"
-menu = "noebs_menu"
+menu = "footer_menu"
 +++
 
 # Contact us

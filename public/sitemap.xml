@@ -84,6 +84,11 @@
   </url>
   
   <url>
+    <loc>/cashq/</loc>
+    <lastmod>2019-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/privacy/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
@@ -116,6 +121,11 @@
   <url>
     <loc>/tags/pin-block/</loc>
     <lastmod>2019-04-20T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/_googlea8ea278d02aa1e38/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

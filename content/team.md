@@ -1,7 +1,7 @@
 +++
 url = "/team"
 title = "team"
-menu = "noebs_menu"
+menu = "footer_menu"
 +++
 
 <div class="box-team">
