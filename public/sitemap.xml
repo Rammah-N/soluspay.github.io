@@ -79,6 +79,11 @@
   </url>
   
   <url>
+    <loc>/special_thanks/</loc>
+    <lastmod>2019-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
@@ -89,7 +94,27 @@
   </url>
   
   <url>
+    <loc>/compliance/</loc>
+    <lastmod>2019-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/errors/</loc>
+    <lastmod>2019-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/partners/</loc>
+    <lastmod>2019-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/privacy/</loc>
+    <lastmod>2019-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
