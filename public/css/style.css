@@ -6927,6 +6927,15 @@ div.subtitle.tags {
   flex-direction: column;
 }
 
+.gallery {
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1), 0 0 0 1px rgba(17, 17, 17, 0.1);
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  background-color: #fff;
+}
+
 .footer-flex {
   display: flex;
   flex-flow: row wrap;
@@ -6952,11 +6961,16 @@ table th {
   }
   .content h1,
   .content h2,
-  .content h3 .content h4 {
+  .content h3 .content h4 
+  {
     color: #e4e4e4 !important;
   }
   .title {
     color: #e4e4e4 !important;
+  }
+  strong {
+  color: #e4e4e4 !important;
+
   }
 
   .level-item {
@@ -6969,5 +6983,12 @@ table th {
   table th {
     color: whitesmoke !important;
     text-align: left;
+  }
+
+  .box p {
+    color: #586e75 !important;
+  }
+    .gallery p {
+    color: #586e75 !important;
   }
 }

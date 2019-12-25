@@ -9,6 +9,7 @@ page = "list"
 <link rel="preload" href="/img/3.jpg" as="image">
 <link rel="preload" href="/img/4.jpg" as="image">
 <link rel="preload" href="/img/5.jpg" as="image">
+
 # Solus Dashboard
 
 Our payment gateway dashboard. A modern dashboard that helps you inquire and analyze your transactions! It features:
@@ -17,6 +18,7 @@ Our payment gateway dashboard. A modern dashboard that helps you inquire and ana
 - sorting and queries
 - export to Excel
 - and much much more
+  View the public records at: https://dashboard.soluspay.net. Users who worked with the old dashboard, can still access it via https://dashboard.soluspay.net/old
 
 See this video {{< youtube jWmbpxRc-w0 >}}
 
@@ -112,7 +114,6 @@ We also have variety of mobile POS and card readers that can be integrated with 
 <img src="/img/2.jpg" loading="lazy" width="300">
 <img src="/img/3.jpg" loading="lazy" width="300">
 <img src="/img/1.jpg" alt="KS8223 Android POS" width="300">
-
 </div>
 
 # Business Inquiries

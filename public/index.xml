@@ -71,7 +71,7 @@
 
 &lt;hr&gt;
 
-&lt;h1 id=&#34;what-is-solus&#34;&gt;What is Solus&lt;/h1&gt;
+&lt;h2 id=&#34;what-is-solus&#34;&gt;What is Solus&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;from Latin word Solus, or the unique solution.&lt;/li&gt;
@@ -88,6 +88,65 @@
 &lt;h1 id=&#34;our-team&#34;&gt;Our team&lt;/h1&gt;
 
 &lt;p&gt;See &lt;a href=&#34;/team&#34;&gt;our team section&lt;/a&gt;. Join us!&lt;/p&gt;
+</content>
+      
+    </item>
+    
+    <item>
+      <title>gallery</title>
+      <link>/gallery/</link>
+      <pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate>
+      <author>Solus Team</author>
+      <guid>/gallery/</guid>
+      <description></description>
+      
+      <content>&lt;p&gt;A list of products and services we have!&lt;/p&gt;
+
+&lt;div class=&#34;container&#34;&gt;
+&lt;div class=&#34;gallery&#34;&gt;
+
+&lt;p&gt;We believe in great UI. And we pay special attention to make all of our products
+easily accessible to our users.&lt;/p&gt;
+
+&lt;div class=&#34;flex-item&#34;&gt;
+&lt;p&gt;A neat UI design with great performance. Make your payments as easy as possible! Cashq, your friendly payment app!&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;/img/cashq.jpg&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;Cashq Mobile Payment&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class=&#34;flex-item&#34;&gt;
+&lt;p&gt;For those of us who use a laptop and the browser a lot, we made you Solus Web Portal. It is made to be easy to use, with analytics and transactions report available for you! It integrates well with our products such as Excel for data analysis.&lt;/p&gt;
+&lt;p&gt;It can be used by both individuals, but it can also be very helpful for small stores and groceries who might be interested in offering payment services.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;/img/webportal.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;Solus Web Portal&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class=&#34;flex-item&#34;&gt;
+&lt;p&gt;Our dashboard is for merchants and banks to review and see summaries and statistical analysis and visualizations about their transactions. &lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;/img/dashboard.png&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;Noebs Dashboard!&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
 </content>
       
     </item>
@@ -815,7 +874,8 @@ Changes to these Terms of Use&lt;/p&gt;
 &lt;li&gt;full search&lt;/li&gt;
 &lt;li&gt;sorting and queries&lt;/li&gt;
 &lt;li&gt;export to Excel&lt;/li&gt;
-&lt;li&gt;and much much more&lt;/li&gt;
+&lt;li&gt;and much much more
+View the public records at: &lt;a href=&#34;https://dashboard.soluspay.net&#34; target=&#34;_blank&#34;&gt;https://dashboard.soluspay.net&lt;/a&gt;. Users who worked with the old dashboard, can still access it via &lt;a href=&#34;https://dashboard.soluspay.net/old&#34; target=&#34;_blank&#34;&gt;https://dashboard.soluspay.net/old&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;See this video 
@@ -996,7 +1056,6 @@ A neat and simple, mobile-like QR POS. You will never regret this one.&lt;/li&gt
 &lt;img src=&#34;/img/2.jpg&#34; loading=&#34;lazy&#34; width=&#34;300&#34;&gt;
 &lt;img src=&#34;/img/3.jpg&#34; loading=&#34;lazy&#34; width=&#34;300&#34;&gt;
 &lt;img src=&#34;/img/1.jpg&#34; alt=&#34;KS8223 Android POS&#34; width=&#34;300&#34;&gt;
-
 &lt;/div&gt;
 
 &lt;h1 id=&#34;business-inquiries&#34;&gt;Business Inquiries&lt;/h1&gt;
