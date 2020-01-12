@@ -109,11 +109,13 @@ _NewPOS is in the world top 10 POS vendors in terms of # sold devices_
 We also have variety of mobile POS and card readers that can be integrated with Soluspay App to work as a POS!
 
 <div class="flex">
-<img src="/img/5.jpg" loading="lazy" width="300">
-<img src="/img/4.jpg" loading="lazy" width="300">
-<img src="/img/2.jpg" loading="lazy" width="300">
-<img src="/img/3.jpg" loading="lazy" width="300">
-<img src="/img/1.jpg" alt="KS8223 Android POS" width="300">
+<img src="/img/7.webp" loading="lazy">
+<img src="/img/6.webp" loading="lazy">
+<img src="/img/5.webp" loading="lazy">
+<img src="/img/4.webp" loading="lazy">
+<img src="/img/2.webp" loading="lazy">
+<img src="/img/3.webp" loading="lazy">
+<img src="/img/1.webp" alt="KS8223 Android POS">
 </div>
 
 # Business Inquiries
