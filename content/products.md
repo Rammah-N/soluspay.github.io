@@ -4,11 +4,6 @@ menu = "noebs_menu"
 page = "list"
 +++
 
-<link rel="preload" href="/img/1.jpg" as="image">
-<link rel="preload" href="/img/2.jpg" as="image">
-<link rel="preload" href="/img/3.jpg" as="image">
-<link rel="preload" href="/img/4.jpg" as="image">
-<link rel="preload" href="/img/5.jpg" as="image">
 
 # Solus Dashboard
 

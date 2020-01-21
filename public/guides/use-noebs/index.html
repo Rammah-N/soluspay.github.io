@@ -116,75 +116,55 @@
     <h1 class="title">Guides on how to deploy your noebs applications</h1>
     
     <div class="content">
-      
-
-<h2 id="why-go">Why Go?</h2>
-
+      <h2 id="why-go">Why Go?</h2>
 <p>Go is really fast! Our application can happily serve more than 60k req/sec. The bottleneck will never be on your payment gateway service! Plus, Go helps with many of the problems I faced while working with Python, the static typing can prevent your errors from occurring only at runtime, and your code will compile into a single binary that you just run. I’ve been very excited to write web services Go and this project offers me just that!</p>
-
 <h1 id="how-to-use-noebs">How to use noebs</h1>
-
 <p>There are different ways to use noebs:</p>
-
 <h2 id="building-using-docker-and-docker-compose">Building using Docker and docker-compose</h2>
-
-<p>We provide an easier way to build and run noebs using Docker.
-- Fork this repository (e.g., <code>git clone https://github.com/adonese/noebs</code>)
-- <code>cd</code> to noebs root directory (E.g., $HOME/src/noebs)
-- <code>docker build -t noebs .</code>  # -t for giving it a name
-- <code>docker run -it -p 8000:8000 noebs:latest</code>
-- Open <code>localhost:8000/test</code> in your broswer to interact with noebs</p>
-
-<h2 id="building-with-go-get-command-not-recommended">Building with go get command [not recommended]</h2>
-
+<p>We provide an easier way to build and run noebs using Docker.</p>
 <ul>
-<li>make sure you have Go installed <a href="https://golang.org" target="_blank">Consult go website to see various ways to install go</a></li>
-
-<li><p>Then</p>
-
-<pre><code class="language-shell"># this command may likely takes along time depending on your internet connections.
-# also, make sure you are using a vpn since some of the libraries are hosted in GCE hosting which forbids Sudan
+<li>Fork this repository (e.g., <code>git clone https://github.com/adonese/noebs</code>)</li>
+<li><code>cd</code> to noebs root directory (E.g., $HOME/src/noebs)</li>
+<li><code>docker build -t noebs .</code>  # -t for giving it a name</li>
+<li><code>docker run -it -p 8000:8000 noebs:latest</code></li>
+<li>Open <code>localhost:8000/test</code> in your broswer to interact with noebs</li>
+</ul>
+<h2 id="building-with-go-get-command-not-recommended">Building with go get command [not recommended]</h2>
+<ul>
+<li>make sure you have Go installed <a href="https://golang.org">Consult go website to see various ways to install go</a></li>
+<li>Then</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># this command may likely takes along time depending on your internet connections.</span>
+<span style="color:#75715e"># also, make sure you are using a vpn since some of the libraries are hosted in GCE hosting which forbids Sudan</span>
 go get github.com/adonese/noebs
 cd $GOPATH/github.com/adonese/noebs
 go build .
-</code></pre>
-
-<p>You will have a binary that after running it will spawn a production ready server!</p></li>
-</ul>
-
+</code></pre></div><p>You will have a binary that after running it will spawn a production ready server!</p>
 <h2 id="notes-on-installation">Notes on installation</h2>
-
 <p>noebs needs to be connected with EBS merchant server in order to get useful responses. <em>However, you can run our embedded server that mocks EBS responses in cases where you cannot reach EBS server</em>. To do that, you need to enable the development mode using a special env var, <code>EBS_LOCAL_DEV</code>. You need to set <code>EBS_LOCAL_DEV=1</code> in order to use the mocking functionality.</p>
-
 <ul>
-<li><p>Using Docker</p>
-
-<pre><code class="language-shell">docker run -it -p 8000:8000 -e EBS_LOCAL_DEV=1 noebs:latest
-</code></pre></li>
-
-<li><p>Using <code>go get</code> method</p>
-
-<pre><code class="language-shell">export EBS_LOCAL_DEV=1 noebs
-</code></pre></li>
+<li>Using Docker</li>
 </ul>
-
-<h1 id="this-project-philosophy">This project philosophy</h1>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -it -p 8000:8000 -e EBS_LOCAL_DEV<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> noebs:latest
+</code></pre></div><ul>
+<li>Using <code>go get</code> method</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">export EBS_LOCAL_DEV<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> noebs
+</code></pre></div><h1 id="this-project-philosophy">This project philosophy</h1>
 <p>noebs is not meant to be a full e-payment framework (e.g., unlike Morsal). It is meant as a generic e-payment gateway system. Currently, it implements EBS services, but we might add new gateway. Being such, adapts to Unix philosophy; doing one thing and do it good. Also, with our experience with embedded devices, working with authorizations and handling all of these headers and tokens (esp. JWT ones) has proven to be challenging as simply some of the older models cannot handle lengthy headers.
-You can however have this system architecture, suppose that you&rsquo;re building a mobile payment application system:
-- a mobile application app (with its backend system, obviously). This app will encapsulates the business logic and authenticate the incoming requests.
-- a chatting service. Like WeChat, where people can send their money to their friends and families, in a very friendly way.
-- ecommerce platform. The idea is <em>not</em> just to offer an epayment gateway, well, EBS offers that through their MCS web services.
-- and finally the payment gateway layer which handles the payment part.
-- there could be other services e.g., push notifications, SMS, 2FA and plenty of others.
-- logging and the reporting system.
-- rate limiting, geographical blocking and other API gateway protections.
-All of these will be implemented in a microservice archiectural design pattern, and it is your decision to choose what services you want. A mobile payment provider can use our payment service inside their application whenever their users are requesting any transactions. <em>It is not our responsibility to authenticate your users</em>. This way, we can use this application in virtually any place. Our client consumers are held responsible for providing any kind of authentication for their requests.</p>
-
+You can however have this system architecture, suppose that you're building a mobile payment application system:</p>
+<ul>
+<li>a mobile application app (with its backend system, obviously). This app will encapsulates the business logic and authenticate the incoming requests.</li>
+<li>a chatting service. Like WeChat, where people can send their money to their friends and families, in a very friendly way.</li>
+<li>ecommerce platform. The idea is <em>not</em> just to offer an epayment gateway, well, EBS offers that through their MCS web services.</li>
+<li>and finally the payment gateway layer which handles the payment part.</li>
+<li>there could be other services e.g., push notifications, SMS, 2FA and plenty of others.</li>
+<li>logging and the reporting system.</li>
+<li>rate limiting, geographical blocking and other API gateway protections.
+All of these will be implemented in a microservice archiectural design pattern, and it is your decision to choose what services you want. A mobile payment provider can use our payment service inside their application whenever their users are requesting any transactions. <em>It is not our responsibility to authenticate your users</em>. This way, we can use this application in virtually any place. Our client consumers are held responsible for providing any kind of authentication for their requests.</li>
+</ul>
 <h2 id="services-we-offer">Services we offer</h2>
-
 <p>noebs implements <em>ALL</em> of EBS merchant services. We are working to extend our support into other EBS services, e.g., consumer services, TITP, etc. However, those other services are not stable and some of them (consumer) are deem to deprecation.</p>
-
 <p>If YOU are interested in other services, please reach out and we will be more than happy to discuss them with you.</p>
 
       
