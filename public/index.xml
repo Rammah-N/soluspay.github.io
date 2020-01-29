@@ -31,48 +31,100 @@
       <guid>/careers/</guid>
       <description></description>
       
-      <content>&lt;h1 id=&#34;junior-front-end-engineer&#34;&gt;Junior Front-end engineer&lt;/h1&gt;
-&lt;h1 id=&#34;senior-business-development-position&#34;&gt;Senior Business Development Position&lt;/h1&gt;
-&lt;p&gt;Solus offers software services in the field of fintech and electronic payments. We also offer technical and security consultancy.&lt;/p&gt;
-&lt;h2 id=&#34;roles-and-responsibilities&#34;&gt;Roles and responsibilities&lt;/h2&gt;
+      <content>
+&lt;h1&gt;Junior Front-end engineer&lt;/h1&gt;
+
+&lt;h1&gt;
+  Senior Business Development Position
+&lt;/h1&gt;
+
+&lt;p&gt;Solus offers software services in the field of fintech and electronic payments. We also offer technical and security
+  consultancy.&lt;/p&gt;
+
+&lt;h2&gt;Roles and responsibilities&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Study the market and propose viable business solutions&lt;/li&gt;
+  &lt;li&gt;Effective proposal and presentations for our customers&lt;/li&gt;
+  &lt;li&gt;Identify new markets and business opportunities to help the company grow&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3&gt;What the kind of candidates we expect
+&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;self motivated&lt;/li&gt;
+  &lt;li&gt;we expect the candidate to have leadership skill and help us grow our (theirs!) business development department
+  &lt;/li&gt;
+  &lt;li&gt;software development skills are needed in order to get the most of this opportunity; though the candidates are not
+    required to write code
+  &lt;/li&gt;
+  &lt;li&gt;we work in electronic payment and we expect the candidate to be aware of the challenges of this field and have
+    plans
+    on how to address them&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;form action=&#34;https://formspree.io/xpzdzovb&#34; method=&#34;POST&#34; enctype=&#34;multipart/form-data&#34;&gt;
+  &lt;label for=&#34;fname&#34;&gt;
+    Your name is:
+    &lt;input required type=&#34;text&#34; name=&#34;name&#34; id=&#34;fname&#34;&gt;
+  &lt;/label&gt;
+  &lt;br&gt;
+  &lt;label for=&#34;fmobile&#34;&gt;
+    Your mobile number:
+    &lt;input required type=&#34;text&#34; name=&#34;mobile_number&#34; id=&#34;fmobile&#34;&gt;
+  &lt;/label&gt;
+  &lt;br&gt;
+  &lt;label for=&#34;femail&#34;&gt;
+    Your email:
+    &lt;input required type=&#34;text&#34; name=&#34;_replyto&#34; id=&#34;femail&#34;&gt;
+  &lt;/label&gt;
+  &lt;br&gt;
+  &lt;label for=&#34;fupload&#34;&gt;
+    Upload your resume:
+    &lt;input required type=&#34;file&#34; name=&#34;upload&#34; id=&#34;fupload&#34;&gt;
+  &lt;/label&gt;
+  &lt;br&gt;
+  &lt;button type=&#34;submit&#34;&gt;Send&lt;/button&gt;
+  &lt;input type=&#34;hidden&#34; name=&#34;_next&#34; value=&#34;https://soluspay.net/thankyou&#34; /&gt;
+
+&lt;/form&gt;
+
+&lt;p&gt;Or, you can also apply by sending your resume to &lt;a href=&#34;mailto:info@soluspay.net&#34;&gt;mailto:info@soluspay.net&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h1&gt;I&#39;m not supposed to show up&lt;/h1&gt;
+
+&lt;h3&gt;What do we offer&lt;/h3&gt;
+
 &lt;ul&gt;
-&lt;li&gt;Study the market and propose viable business solutions&lt;/li&gt;
-&lt;li&gt;Effective proposal and presentations for our customers&lt;/li&gt;
-&lt;li&gt;Identify new markets and business opportunities to help the company grow&lt;/li&gt;
+  &lt;li&gt;VERY modern tech stack&lt;/li&gt;
+  &lt;li&gt;Strong technical team&lt;/li&gt;
+  &lt;li&gt;Friendly offices and great team culture&lt;/li&gt;
+  &lt;li&gt;Committment to our team members and their personal growth (we have planned rotations periods)&lt;/li&gt;
+  &lt;li&gt;We want to do this right!&lt;/li&gt;
+  &lt;li&gt;Small team with a mix between startup culture and &#34;old-school&#34;&lt;/li&gt;
+
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-the-kind-of-candidates-we-expect&#34;&gt;What the kind of candidates we expect&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;self motivated&lt;/li&gt;
-&lt;li&gt;we expect the candidate to have leadership skill and help us grow our (theirs!) business development department&lt;/li&gt;
-&lt;li&gt;software development skills are needed in order to get the most of this opportunity; though the candidates are not required to write code&lt;/li&gt;
-&lt;li&gt;we work in electronic payment and we expect the candidate to be aware of the challenges of this field and have plans on how to address them&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Send&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Apply by sending your resume to &lt;a href=&#34;mailto:adonese@soluspay.net&#34;&gt;adonese@soluspay.net&lt;/a&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;h2 id=&#34;what-do-we-offer&#34;&gt;What do we offer&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;VERY modern tech stack&lt;/li&gt;
-&lt;li&gt;Strong technical team&lt;/li&gt;
-&lt;li&gt;Friendly offices and great team culture&lt;/li&gt;
-&lt;li&gt;Committment to our team members and their personal growth (we have planned rotations periods)&lt;/li&gt;
-&lt;li&gt;We want to do this right!&lt;/li&gt;
-&lt;li&gt;Small team with a mix between startup culture and &amp;ldquo;old-school&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;h2 id=&#34;what-is-solus&#34;&gt;What is Solus&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;from Latin word Solus, or the unique solution.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;what-we-are-offering&#34;&gt;What we are offering&lt;/h1&gt;
-&lt;p&gt;fintech and electronic payment solutions&lt;/p&gt;
-&lt;h1 id=&#34;our-products&#34;&gt;Our products&lt;/h1&gt;
-&lt;p&gt;See &lt;a href=&#34;/products&#34;&gt;our products section&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;our-team&#34;&gt;Our team&lt;/h1&gt;
-&lt;p&gt;See &lt;a href=&#34;/team&#34;&gt;our team section&lt;/a&gt;. Join us!&lt;/p&gt;
-</content>
+
+&lt;hr&gt;
+
+&lt;h2&gt;What is Solus&lt;/h2&gt;
+
+- from Latin word Solus, or the unique solution.
+
+&lt;h3&gt;What we are offering&lt;/h3&gt;
+
+fintech and electronic payment solutions
+
+&lt;h1&gt;Our products&lt;/h1&gt;
+
+See &lt;a href=&#34;/products&#34;&gt;Our products&lt;/a&gt;
+
+&lt;h1&gt;Our team&lt;/h1&gt;
+
+See &lt;a href=&#34;/team&#34;&gt;Our team&lt;/a&gt;</content>
       
     </item>
     
