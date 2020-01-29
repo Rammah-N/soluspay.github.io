@@ -6925,6 +6925,13 @@ div.subtitle.tags {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  flex: 3;
+}
+
+.flexbox {
+  display: flex;
+  /* justify-content: flex-start; */
+  flex-direction: row;
 }
 
 .gallery {

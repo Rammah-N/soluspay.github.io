@@ -109,6 +109,11 @@
   </url>
   
   <url>
+    <loc>/gallery/</loc>
+    <lastmod>2019-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/partners/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
@@ -163,11 +168,23 @@
   </url>
   
   <url>
+    <loc>/devices/</loc>
+  </url>
+  
+  <url>
     <loc>/products/</loc>
   </url>
   
   <url>
+    <loc>/devices/spectra/</loc>
+  </url>
+  
+  <url>
     <loc>/team/</loc>
+  </url>
+  
+  <url>
+    <loc>/devices/v71/</loc>
   </url>
   
 </urlset>

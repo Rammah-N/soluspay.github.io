@@ -562,6 +562,29 @@
     </item>
     
     <item>
+      <title>gallery</title>
+      <link>/gallery/</link>
+      <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
+      <author>Solus Team</author>
+      <guid>/gallery/</guid>
+      <description></description>
+      
+      <content>&lt;p&gt;You can download our profile &lt;a href=&#34;/assets/profile.pdf&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;what-is-solus&#34;&gt;What is Solus&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;from Latin word Solus, or the unique solution.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;what-we-are-offering&#34;&gt;What we are offering&lt;/h1&gt;
+&lt;p&gt;fintech and electronic payment solutions&lt;/p&gt;
+&lt;h1 id=&#34;our-products&#34;&gt;Our products&lt;/h1&gt;
+&lt;p&gt;See &lt;a href=&#34;/products&#34;&gt;our products section&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;our-team&#34;&gt;Our team&lt;/h1&gt;
+&lt;p&gt;See &lt;a href=&#34;/team&#34;&gt;our team section&lt;/a&gt;&lt;/p&gt;
+</content>
+      
+    </item>
+    
+    <item>
       <title>partners</title>
       <link>/partners/</link>
       <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
@@ -693,6 +716,18 @@ Changes to these Terms of Use&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;We would love to chat with you and have your feedbacks! Come and visit us on our offices! We run open hours every day (11-12:30pm).&lt;/p&gt;
 </content>
+      
+    </item>
+    
+    <item>
+      <title>Devices</title>
+      <link>/devices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>Solus Team</author>
+      <guid>/devices/</guid>
+      <description></description>
+      
+      <content></content>
       
     </item>
     

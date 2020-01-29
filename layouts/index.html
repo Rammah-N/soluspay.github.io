@@ -8,11 +8,35 @@
     {{ end }}
     <div class="content">
       {{ .Content }}
+
+      <!--Add other div here-->
+      <div class="flexbox">
+        <div class="flex-item">
+          <img src="/assets/svg/credit-card-front.svg" alt="credit card picture" width="33.3%">
+          <h1>Top niche</h1>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab numquam quo architecto aliquid nisi. Architecto
+          natus, sit perferendis rem veniam quos minima ex? Amet et vel, officiis incidunt cupiditate ab!
+        </div>
+        <div class="flex-item">
+          <img src="/assets/svg/credit-card-front.svg" alt="credit card picture" width="33.3%">
+          <h1>Security</h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste labore tenetur porro quisquam minima maxime
+          iure, atque ullam voluptatibus alias quod doloremque nobis pariatur consectetur temporibus eius? Omnis, in
+          atque.
+        </div>
+        <div class="flex-item">
+          <img src="/assets/svg/credit-card-front.svg" alt="credit card picture" width="33.3%">
+          <h1>PCI</h1>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores sed sapiente totam commodi
+          facere repellat ea? Ducimus, eaque. Distinctio quia voluptatum exercitationem minima nam? Consectetur
+          provident molestiae eaque recusandae!
+        </div>
+      </div>
     </div>
 
   </div>
 </section>
 {{ if (and (.Site.Params.Info.codeCopy) (findRE "<pre" .Content 1)) }}
-    <script src="/js/copycode.js"></script>
+<script src="/js/copycode.js"></script>
 {{ end }}
 {{ partial "footer" . }}
