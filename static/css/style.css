@@ -6953,6 +6953,15 @@ div.subtitle.tags {
   padding: 2px;
 }
 
+.my-item h1{
+ margin-top: 0px !important;
+}
+
+
+.my-item {
+flex: 1;
+}
+
 table th {
   color: #222324;
   text-align: left;
