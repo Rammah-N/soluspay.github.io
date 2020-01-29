@@ -6932,6 +6932,7 @@ div.subtitle.tags {
   display: flex;
   /* justify-content: flex-start; */
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .gallery {
@@ -6954,7 +6955,7 @@ div.subtitle.tags {
 }
 
 .my-item h1{
- margin-top: 0px !important;
+ margin-top: 5px !important;
 }
 
 
