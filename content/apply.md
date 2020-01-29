@@ -25,7 +25,35 @@ Solus offers software services in the field of fintech and electronic payments. 
 - software development skills are needed in order to get the most of this opportunity; though the candidates are not required to write code
 - we work in electronic payment and we expect the candidate to be aware of the challenges of this field and have plans on how to address them
 
+<form
+  action="https://formspree.io/xpzdzovb"
+  method="POST"
+  enctype="multipart/form-data"
+>
+  <label>
+    Your name:
+    <input type="text" name="name">
+  </label>
+    <label>
+    Your mobile number:
+    <input type="text" name="mobile_number">
+  </label>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Upload your resume:
+    <input type="file" name="upload">
+  </label>
+
+<button type="submit">Send</button>
+
+</form>
+
 Apply by sending your resume to [adonese@soluspay.net](mailto:adonese@soluspay.net)
+
+<h1>I'm not supposed to show up</h1>
 
 ## What do we offer
 
