@@ -1,6 +1,6 @@
 baseurl = ""
 languageCode = "en-US"
-title = "Soluspay | Secure Payments"
+title = "Soluspay: Secure Payments"
 disqusShortname = "shortname"
 googleAnalytics = ""
 Paginate = 5 # Number of posts per page
@@ -18,8 +18,8 @@ authorEmail = "hi@soluspay.net" # Author email
 [params.info]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
 enableSocial = true # Adds OpenGraph and Twitter cards
-homeTitle = "" # Title for home page
-poweredby = true # Adds powered by hugo and kiss below Copyright
+homeTitle = "SolusPay" # Title for home page
+poweredby = false # Adds powered by hugo and kiss below Copyright
 related = true # Includes related articles at the bottom of the article
 codeCopy = true # Add copy button above code blocks
 
