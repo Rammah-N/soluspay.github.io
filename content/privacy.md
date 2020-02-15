@@ -3,15 +3,18 @@ title = "privacy"
 date = "2019-06-25"
 menu = "noebs_menu"
 url = "/privacy"
+description = """CashQ provides this Website and Services (located at https://soluspay.net) to you subject to the notices, terms, and conditions set forth in these terms (the "Terms of Use"). In addition, when you use any of our Services, you will be subject to the rules, guidelines, policies, terms, and conditions applicable to such service, and they are incorporated into this Terms of Use by this reference. This Terms of Service was created by Terms of Use Template and the Disclaimer Sample."""
 +++
 
 # Privacy
-- We *only* store your data when you opt to
+
+- We _only_ store your data when you opt to
 - All of your data are securely encrypted and safe; EVEN us cannot view it
 - We don't log any of your transactions; we deliberately mask your Card Info for general support purposes
 - You can choose, at any time to remove all of your information
 
 # Preview your Terms of Use
+
 Terms of Use of https://soluspay.net
 
 ## Welcome to the CashQ website (the "Website").

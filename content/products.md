@@ -2,8 +2,15 @@
 title = "products"
 menu = "noebs_menu"
 page = "list"
-+++
+description = """Solus offers range of products:
+Our payment gateway dashboard. A modern dashboard that helps you inquire and analyze your transactions!
 
+A modern, feature rich ecommerce platform! Built with the latest technologies and it is made as clean and neat as possible to help you have the best payment experience. The storefront is written in PWA which allows your customers to buy even when they are offline (for better sales and customers experience).
+
+noebs https://noebs.dev is a free and open source payment gateway. It was developed from the beginning to solve challenging tasks in electronic payment and to support variety of use cases (extensibility). It is written in Go and it is the fastest and the most secure middleware in the market. Above all that, the product was thoroughly tested, it is now used by different clients (it is EBS certified). For more information about the technical aspects of noebs, please visit our website: noebs technical review.
+
+Quality. First and foremost. This is our motto and this is what we are offering. The best in-market devices that can achieve our clients get the most out of their business."""
++++
 
 # Solus Dashboard
 

@@ -7,6 +7,9 @@ Paginate = 5 # Number of posts per page
 enableRobotsTXT = true
 publishDir = "public"
 
+[params.global]
+description = "SolusPay is a Sudanese Financial Service Provider (FSP), from Central Bank of Sudan, under license 12/2019. Solus offers variety of solutions ranging from mobile banking, mobile payments, core banking systems, middleware and security consultations. All of our systems are PCI compliant and went through excessive testings. In addition to payment systems, we also offer services and solutions for government in flour management and subsidation, fuel management and other key systems for the government of the Sudan."
+
 [params.rss] # Adding this tag enables RSS feed
 includeContent = true # Includes whole content in rss
 authorName = "Solus Team" # Author full name
@@ -22,6 +25,7 @@ homeTitle = "SolusPay" # Title for home page
 poweredby = false # Adds powered by hugo and kiss below Copyright
 related = true # Includes related articles at the bottom of the article
 codeCopy = true # Add copy button above code blocks
+description = "SolusPay is a Sudanese Financial Service Provider (FSP), from Central Bank of Sudan, under license 12/2019. Solus offers variety of solutions ranging from mobile banking, mobile payments, core banking systems, middleware and security consultations. All of our systems are PCI compliant and went through excessive testings. In addition to payment systems, we also offer services and solutions for government in flour management and subsidation, fuel management and other key systems for the government of the Sudan."
 
 [params.features]
 disqusOnDemand = true  # Load Disqus comments on click

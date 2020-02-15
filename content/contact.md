@@ -1,6 +1,7 @@
 +++
 title = "contact"
 menu = "footer_menu"
+description = "We would love to chat with you and have your feedbacks! Come and visit us on our offices! We run open hours every day (11-12:30pm)."
 +++
 
 # Contact us
